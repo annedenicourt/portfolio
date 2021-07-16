@@ -2,8 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poiret One", cursive, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif !important;
+  background-image: url("../public/images/oriental-tiles.png");
+  background-attachment: fixed;
 }
 
 a {
@@ -11,6 +14,19 @@ a {
   text-decoration: none;
 }
 
+.button-scroll {
+  margin-bottom: 200px;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*font-family: 'Josefin Slab', serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Zen Loop', cursive;*/
