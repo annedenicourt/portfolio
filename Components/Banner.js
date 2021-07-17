@@ -15,16 +15,16 @@ export default function Banner() {
                     </button>
                     <div className="collapse navbar-collapse justify-content-center mb-2 fs-5" id="navbarNav">
                         <ul className="navbar-nav text-center fs-4">
-                            <li className="nav-item me-3">
+                            <li className="nav-item me-4">
                                 <Link href="/"><a className= {router.pathname == "/" ? `nav-link ${styles.active}` : "nav-link"}>Accueil</a></Link>
                             </li>
-                            <li className="nav-item me-3">
+                            <li className="nav-item me-4">
                                 <Link href="/qui-suis-je"><a className= {router.pathname == "/qui-suis-je" ? `nav-link ${styles.active}` : "nav-link"}>Qui suis-je ?</a></Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item me-4">
                                 <Link href="/mon-cv"><a className= {router.pathname == "/mon-cv" ? `nav-link ${styles.active}` : "nav-link"}>Mon CV</a></Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item me-4">
                                 <Link href="/portfolio"><a className= {router.pathname == "/portfolio" ? `nav-link ${styles.active}` : "nav-link"}>Mes projets</a></Link>
                             </li>
                             <li className="nav-item">

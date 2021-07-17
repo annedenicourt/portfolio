@@ -6,8 +6,9 @@ import Banner from '../Components/Banner'
 import CardTech from '../Components/CardTech'
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 
-export default function Home() {
+export default function Portfolio() {
 
   return (
     <div>
@@ -20,29 +21,46 @@ export default function Home() {
     <main>
         <div className="row col-9 mx-auto justify-content-center text-center bg-white">
             <Banner />
-            <div className="w-75 mx-auto pt-5 pb-5">
-                <Image className={`${styles.image}`}
-                    src="/images/laptop.png"
-                    alt=""
-                    width={500}
-                    height={230} 
-                    layout="responsive"
-                    priority='true'
-                />
+
+            <div className="row col-9 mx-auto d-flex justify-content-center text-center bg-white">
+            <div className="col col-lg-5 mb-5">
+                <div className="card fs-5 shadow">
+                <img src="/images/reservia.png" alt="" />
+                    <div className="card-body">
+                        <i className="bi bi-search fs-4 me-4"></i>  
+                        <Link href="https://annedenicourt.github.io/AnneDenicourt_2_13102020/"><a target="_blank"><i className="bi bi-link fs-4 text-dark"></i></a></Link>                      
+                    </div>
+                </div>
             </div>
-            <Flip left>
-                <h1 className="text-center mt-5 fw-bold">Anne DENICOURT</h1>
-            </Flip>
-            <Flip right>
-                <h2 className="text-center fs-3">Développeur Web</h2>
-            </Flip>
+            <div className="col col-lg-5 mb-5">
+                <div className="card fs-5 shadow">
+                    <img src="/images/ohmyfood.png" alt="" />
+                    <div className="card-body">
+                        <i className="bi bi-search fs-4 me-4"></i>
+                        <Link href="https://annedenicourt.github.io/AnneDenicourt_3_02112020/"><a target="_blank"><i className="bi bi-link fs-4 text-dark"></i></a></Link>                                              
+                    </div>
+                </div>
+            </div>
+            <div className="col col-lg-5 mb-5">
+                <div className="card fs-5 shadow">
+                    <img src="/images/orinoco.png" alt="" />
+                    <div className="card-body">
+                        <i className="bi bi-search fs-4 me-4"></i>
+                        <Link href="https://annedenicourt.github.io/AnneDenicourt_5_08122020/"><a target="_blank"><i className="bi bi-link fs-4 text-dark"></i></a></Link>                      
+                    </div>
+                </div>
+            </div>
+            <div className="col col-lg-5">
+                <div className="card fs-5 shadow">
+                    <img src="/images/mystore.png" alt="" />
+                    <div className="card-body">
+                        <i className="bi bi-search fs-4 me-4"></i> 
+                        <Link href="https://anita-shop.fr/"><a target="_blank"><i className="bi bi-link fs-4 text-dark"></i></a></Link>                      
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-        
-        
-  );
-        
+        </div>     
     </main>
     </div>
   )

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Banner from '../Components/Banner'
 import CardTech from '../Components/CardTech'
+import Carousel from '../Components/Carousel'
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 
@@ -51,15 +52,15 @@ export default function Home() {
                     priority='true'
                 />
             </div>
-            <Flip left>
-                <div className="p-4 col-8 mx-auto fs-5">
+            
+                <div className="col-8 text-xl">
                     Développeuse web avec une appétence toute particulière pour le framework React.js, 
                     je me suis engagée dans cette voie professionnelle avant tout par passion. 
                     Quoi de plus grisant et de plus stimulant que de créer un site, de le faire fonctionner 
                     et de chercher des solutions lorsqu’un problème apparaît ? <br />
                     Une vraie révélation pour moi avec l’envie chaque jour d’en apprendre toujours davantage.<br />
                 </div>
-            </Flip>
+            
             <div className=""><Link href="/qui-suis-je"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-20`}>En savoir plus</button></Link></div>
             <div><Link href="#section2"><button className="animate-bounce button-scroll mt-5 text-center"><i className="bi bi-arrow-down-circle-fill fs-1 p-2"></i></button></Link></div>
         </div>
@@ -91,52 +92,12 @@ export default function Home() {
                     priority='true'
                 />
             </div>
+            <Carousel />
+            <div className=""><Link href="/portfolio"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-12 mb-12`}>En savoir plus</button></Link></div>
         </div>
         
-        <div className="row col-9 mx-auto d-flex justify-content-center text-center bg-white">
-            <div class="col col-lg-5 mb-5">
-                <div class="card fs-5 shadow">
-                    <div class="card-body">
-                        <i class="bi bi-search fs-1"></i>
-                        <h4 class="card-title mt-4 mb-5">PROJET 1</h4>                            
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col col-lg-5 mb-5">
-                <div class="card fs-5 shadow">
-                    <div class="card-body">
-                        <i className="bi bi-search fs-1"></i>
-                        <h4 class="card-tittle mt-4 mb-5">PROJET 2</h4>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col col-lg-5 mb-5">
-                <div class="card fs-5 shadow">
-                    <div class="card-body">
-                        <i className="bi bi-search fs-1"></i>
-                        <h4 class="card-tittle mt-4 mb-5">PROJET 3</h4>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col col-lg-5">
-                <div class="card fs-5 shadow">
-                    <div class="card-body">
-                        <i className="bi bi-search fs-1"></i>
-                        <h4 class="card-tittle mt-4 mb-5">PROJET 4</h4>
-                        
-                    </div>
-                </div>
-            </div>
-            <div className=""><Link href="/portfolio"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-20`}>En savoir plus</button></Link></div>
-            <div><Link href="#section3"><button className="animate-bounce button-scroll mt-5 text-center"><i className="bi bi-arrow-down-circle-fill fs-1 p-2"></i></button></Link></div>
-        </div>
 
-        
-  );
-        
+
     </main>
     </div>
   )
