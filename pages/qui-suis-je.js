@@ -31,7 +31,7 @@ export default function Presentation() {
                     />
                     </div>
                 </div>
-                <div className="col-8 col-lg-5 px-5 mx-auto mx-lg-0">
+                <div className="col-8 col-lg-5 px-lg-5 mx-auto mx-lg-0 text-center text-lg-start">
                     <h2 className="mt-5 mt-lg-0 mb-lg-5">Faisons connaissance...</h2>
                     <div className="">
                         Développeuse web avec une appétence toute particulière pour le framework React.js, 

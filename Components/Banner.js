@@ -25,6 +25,9 @@ export default function Banner() {
                                 <Link href="/mon-cv"><a className= {router.pathname == "/mon-cv" ? `nav-link ${styles.active}` : "nav-link"}>Mon CV</a></Link>
                             </li>
                             <li className="nav-item">
+                                <Link href="/portfolio"><a className= {router.pathname == "/portfolio" ? `nav-link ${styles.active}` : "nav-link"}>Mes projets</a></Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link href="/contact"><a className= {router.pathname == "/contact" ? `nav-link ${styles.active}` : "nav-link"}>Contact</a></Link>
                             </li>                       
                         </ul>

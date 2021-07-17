@@ -6,12 +6,19 @@
   content: "";
   display: block;
   background-color: black;
-  height: 2px;
-  width: 80%;
+  height: 1px;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.bg_card {
+  background-color: #1a2238 !important;
+  color: white;
+}
+.bg_card:hover {
+  filter: brightness(1.4);
 }
 
 .bouton {
@@ -26,7 +33,4 @@
 }
 .image {
   opacity: 0.6;
-}
-.card {
-  background-color: red !important;
 }
