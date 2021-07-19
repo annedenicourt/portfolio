@@ -14,14 +14,14 @@ export default function Presentation() {
     </Head>
 
     <main>
-        <div className="row m-0 justify-content-center d-flex flex-row">
-            <div className="col col-md-9 col-lg-9 p-0 bg-white"><Banner /></div>
+        <div className="row col-9 mx-auto justify-content-center text-center bg-white">
+            <div className=" d-flex justify-content-center"><Banner /></div>
         </div>
         <div className="row m-0 justify-content-center">
-            <div className="col col-md-9 col-lg-9 pb-5 bg-white d-lg-flex justify-content-center">
+            <div className="col col-md-9 col-lg-9 pb-5 pt-5 bg-white d-lg-flex justify-content-center">
                 <div className="col-8 col-lg-4 mx-auto mx-lg-3">
                     <div className="shadow">
-                    <Image className="border rounded"
+                    <Image className="border rounded "
                         src="/images/Recruter Anne Denicourt.jpg"
                         alt=""
                         width={1240}
@@ -32,7 +32,7 @@ export default function Presentation() {
                     </div>
                 </div>
                 <div className="col-8 col-lg-5 px-lg-5 mx-auto mx-lg-0 text-center text-lg-start">
-                    <h2 className="mt-5 mt-lg-0 mb-lg-5">Faisons connaissance...</h2>
+                    <h2 className="mt-5 mt-lg-0 mb-lg-4">Faisons connaissance...</h2>
                     <div className="">
                         Développeuse web avec une appétence toute particulière pour le framework React.js, 
                         je me suis engagée dans cette voie professionnelle avant tout par passion. 

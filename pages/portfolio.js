@@ -3,10 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Banner from '../Components/Banner'
-import CardTech from '../Components/CardTech'
-import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import CardProject from '../Components/CardProject'
+import { projects } from '../datas/projectList'
 
 export default function Portfolio() {
 
@@ -20,47 +18,24 @@ export default function Portfolio() {
 
     <main>
         <div className="row col-9 mx-auto justify-content-center text-center bg-white">
-            <Banner />
-
-            <div className="row col-9 mx-auto d-flex justify-content-center text-center bg-white">
-            <div className="col col-lg-5 mb-5">
-                <div className="card fs-5 shadow">
-                <img src="/images/reservia.png" alt="" />
-                    <div className="card-body">
-                        <i className="bi bi-search fs-4 me-4"></i>  
-                        <Link href="https://annedenicourt.github.io/AnneDenicourt_2_13102020/"><a target="_blank"><i className="bi bi-link fs-4 text-dark"></i></a></Link>                      
-                    </div>
-                </div>
-            </div>
-            <div className="col col-lg-5 mb-5">
-                <div className="card fs-5 shadow">
-                    <img src="/images/ohmyfood.png" alt="" />
-                    <div className="card-body">
-                        <i className="bi bi-search fs-4 me-4"></i>
-                        <Link href="https://annedenicourt.github.io/AnneDenicourt_3_02112020/"><a target="_blank"><i className="bi bi-link fs-4 text-dark"></i></a></Link>                                              
-                    </div>
-                </div>
-            </div>
-            <div className="col col-lg-5 mb-5">
-                <div className="card fs-5 shadow">
-                    <img src="/images/orinoco.png" alt="" />
-                    <div className="card-body">
-                        <i className="bi bi-search fs-4 me-4"></i>
-                        <Link href="https://annedenicourt.github.io/AnneDenicourt_5_08122020/"><a target="_blank"><i className="bi bi-link fs-4 text-dark"></i></a></Link>                      
-                    </div>
-                </div>
-            </div>
-            <div className="col col-lg-5">
-                <div className="card fs-5 shadow">
-                    <img src="/images/mystore.png" alt="" />
-                    <div className="card-body">
-                        <i className="bi bi-search fs-4 me-4"></i> 
-                        <Link href="https://anita-shop.fr/"><a target="_blank"><i className="bi bi-link fs-4 text-dark"></i></a></Link>                      
-                    </div>
-                </div>
-            </div>
+            <div className=" d-flex justify-content-center"><Banner /></div>
         </div>
-        </div>     
+
+        <div className="row col-9 mx-auto pt-5 d-flex flex-column flex-lg-row justify-content-center text-center bg-white">
+            {projects.map(project => (
+                <CardProject 
+                    id={project.id}
+                    name={project.name}
+                    title={project.title}
+                    description={project.description}
+                    techno={project.techno}
+                    image={project.image}
+                    link={project.link}
+                    github={project.github}
+                />
+            ))}
+        </div>
+        
     </main>
     </div>
   )

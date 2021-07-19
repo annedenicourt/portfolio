@@ -20,11 +20,13 @@ export default function Home() {
 
     <main>
         <div className="row col-9 mx-auto justify-content-center text-center bg-white">
-            <Banner />
-            <div className="w-75 mx-auto pt-5 pb-5">
+            <div className={`${styles.menu} d-flex justify-content-center position-fixed`}><Banner /></div>
+        </div>
+        <div className="row col-9 mx-auto pt-5 justify-content-center text-center bg-white">
+            <div className="w-75 mx-auto mt-5 pt-5 pb-5">
                 <Image className={`${styles.image}`}
                     src="/images/laptop.png"
-                    alt=""
+                    alt="illustration ordinateur"
                     width={500}
                     height={230} 
                     layout="responsive"
@@ -45,7 +47,7 @@ export default function Home() {
             <div className="w-25 mx-auto pt-5 pb-5">
                 <Image className={`${styles.image}`}
                     src="/images/girl2.png"
-                    alt=""
+                    alt="illustration jeune fille"
                     width={500}
                     height={325} 
                     layout="responsive"
@@ -53,13 +55,13 @@ export default function Home() {
                 />
             </div>
             
-                <div className="col-8 text-xl">
-                    Développeuse web avec une appétence toute particulière pour le framework React.js, 
-                    je me suis engagée dans cette voie professionnelle avant tout par passion. 
-                    Quoi de plus grisant et de plus stimulant que de créer un site, de le faire fonctionner 
-                    et de chercher des solutions lorsqu’un problème apparaît ? <br />
-                    Une vraie révélation pour moi avec l’envie chaque jour d’en apprendre toujours davantage.<br />
-                </div>
+            <div className="col-8 text-xl">
+                Développeuse web avec une appétence toute particulière pour le framework React.js, 
+                je me suis engagée dans cette voie professionnelle avant tout par passion. 
+                Quoi de plus grisant et de plus stimulant que de créer un site, de le faire fonctionner 
+                et de chercher des solutions lorsqu’un problème apparaît ? <br />
+                Une vraie révélation pour moi avec l’envie chaque jour d’en apprendre toujours davantage.<br />
+            </div>
             
             <div className=""><Link href="/qui-suis-je"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-20`}>En savoir plus</button></Link></div>
             <div><Link href="#section2"><button className="animate-bounce button-scroll mt-5 text-center"><i className="bi bi-arrow-down-circle-fill fs-1 p-2"></i></button></Link></div>
@@ -70,7 +72,7 @@ export default function Home() {
             <div className="w-25 mx-auto pt-5 pb-5">
                 <Image className={`${styles.image}`}
                     src="/images/fauteuil.png"
-                    alt=""
+                    alt="illustration fauteuil bureau"
                     width={4000}
                     height={4000} 
                     layout="responsive"
@@ -85,19 +87,19 @@ export default function Home() {
             <div className="w-25 mx-auto pt-5 pb-5">
                 <Image className={`${styles.image}`}
                     src="/images/idea.png"
-                    alt=""
+                    alt="illustration ampoule"
                     width={500}
                     height={249} 
                     layout="responsive"
                     priority='true'
                 />
             </div>
+            <div className="mb-10 text-xl">
+                Quelques projets réalisés lors de ma formation... <br />en attendant avec impatience ceux à venir !
+            </div>
             <Carousel />
-            <div className=""><Link href="/portfolio"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-12 mb-12`}>En savoir plus</button></Link></div>
+            <div className=""><Link href="/portfolio"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-16 mb-12`}>En savoir plus</button></Link></div>
         </div>
-        
-
-
     </main>
     </div>
   )

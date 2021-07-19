@@ -34,3 +34,6 @@
 .image {
   opacity: 0.6;
 }
+.menu {
+  z-index: 1;
+}

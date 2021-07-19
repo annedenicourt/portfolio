@@ -3,33 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Banner from '../Components/Banner'
-import { useState } from "react";
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
-
-function Content() {
-    return (
-      <motion.div
-        className=""
-        layout
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>HTML/CSS</p>
-        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>JAVASCRIPT</p>
-        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>REACT/NEXT</p>
-        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>BOOTSTRAP</p>
-      </motion.div>
-    );
-  }
 
 export default function CV() {
-
-    const [isOpen1, setIsOpen1] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleOpen1 = () => setIsOpen1(!isOpen1);
-    const toggleOpen = () => setIsOpen(!isOpen);
-
 
   return (
     <div className={styles.container}>
@@ -40,9 +15,11 @@ export default function CV() {
     </Head>
 
     <main>
+        <div className="row col-9 mx-auto justify-content-center text-center bg-white">
+            <div className=" d-flex justify-content-center"><Banner /></div>
+        </div>
         <div className="row m-0 justify-content-center">
-            <div className="col col-md-9 col-lg-9 p-0 position-relative bg-white">
-            <Banner />
+            <div className="col col-md-9 col-lg-9 px-0 pt-5 position-relative bg-white">
                 <div className="w-50 mx-auto shadow mb-5">
                     <Image className="rounded"
                         src="/images/CV.jpg"

@@ -7,8 +7,8 @@ export default function Banner() {
     const router = useRouter();
 
     return (  
-        <div className="mb-5">
-            <nav className="navbar navbar-expand-lg navbar-light">
+        <div className="bg-white"  >
+            <nav className="navbar navbar-expand-lg navbar-light mb-2 ">
                 <div className="container-fluid justify-content-center">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
