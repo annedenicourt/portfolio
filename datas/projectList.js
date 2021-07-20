@@ -39,7 +39,17 @@ export const projects = [
         image: '/images/mystore.png',
         link: "https://anita-shop.fr/",
         github: 'https://github.com/annedenicourt/fakestore_21_04_2021'
-	},	
+	},
+    {
+		id: 5,
+        name: 'Réseau social d\'entreprise',
+        title: 'Créer un réseau social d\'entreprise',
+		description: 'Création d\'un réseau social d\'entreprise avec REACT et MYSQL, connexion à l\'API GOOGLE, gestion BDD',
+		techno: 'REACT/MYSQL/NODE/API REST/API GOOGLE',
+        image: '/images/groupomania.png',
+        link: "https://www.youtube.com/watch?v=xHydDx5GU7A",
+        github: 'https://github.com/annedenicourt/AnneDenicourt_7_23022021'
+	},
 
 	
 ]

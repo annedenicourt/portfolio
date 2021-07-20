@@ -10,7 +10,7 @@ export default function CardProject(props) {
     const handleShow = () => setShow(true);
 
     return (  
-        <div className="col col-lg-5 mb-5" key={props.id}>
+        <>
             <div className="card fs-5 shadow">
                 <div className="card-title mt-2">{props.name}</div>
                 <img src={props.image} alt="" />
@@ -40,6 +40,6 @@ export default function CardProject(props) {
                     </Button>
                 </Modal.Footer>
         </Modal>
-        </div>
+        </>
     )
 }

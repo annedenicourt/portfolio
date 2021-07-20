@@ -23,7 +23,8 @@ export default function Portfolio() {
 
         <div className="row col-9 mx-auto pt-5 d-flex flex-column flex-lg-row justify-content-center text-center bg-white">
             {projects.map(project => (
-                <CardProject 
+                <div className="col col-lg-5 mb-5" key={project.id}>
+                    <CardProject 
                     id={project.id}
                     name={project.name}
                     title={project.title}
@@ -32,7 +33,8 @@ export default function Portfolio() {
                     image={project.image}
                     link={project.link}
                     github={project.github}
-                />
+                    />
+                </div>
             ))}
         </div>
         

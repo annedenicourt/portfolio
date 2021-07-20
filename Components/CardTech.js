@@ -20,9 +20,9 @@ function Content() {
         <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>BOOTSTRAP</p>
       </motion.div>
     );
-  }
+}
 
-  function Content2() {
+function Content2() {
     return (
       <motion.div
         className=""
@@ -37,7 +37,7 @@ function Content() {
         <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>MYSQL/MONGODB</p>
       </motion.div>
     );
-  }
+}
 
 export default function CardTech() {
 
@@ -48,7 +48,7 @@ export default function CardTech() {
 
     return (  
         <div className="row col-9 mx-auto d-flex flex-column flex-lg-row justify-content-center text-center bg-white">
-            <div className="col col-lg-4 mb-5 ">
+            <div className="col col-lg-5 mb-5 ">
                 <div className={`${styles.bg_card} rounded fs-5 shadow`}>
                     <div className="p-4">
                     <AnimateSharedLayout>
@@ -64,7 +64,7 @@ export default function CardTech() {
                     </div>
                 </div>
             </div>
-            <div className="col col-lg-4">
+            <div className="col col-lg-5">
                 <div className={`${styles.bg_card} rounded fs-5 shadow`}>
                     <div className="p-4">
                     <AnimateSharedLayout>

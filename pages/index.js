@@ -20,7 +20,7 @@ export default function Home() {
 
     <main>
         <div className="row col-9 mx-auto justify-content-center text-center bg-white">
-            <div className={`${styles.menu} d-flex justify-content-center position-fixed`}><Banner /></div>
+            <div className={`${styles.menu} d-flex justify-content-center`}><Banner /></div>
         </div>
         <div className="row col-9 mx-auto pt-5 justify-content-center text-center bg-white">
             <div className="w-75 mx-auto mt-5 pt-5 pb-5">
