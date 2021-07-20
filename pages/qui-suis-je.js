@@ -3,8 +3,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Banner from '../Components/Banner'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
+import { useState } from "react";
 
 export default function Presentation() {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
   return (
     <div className={styles.container}>
     <Head>
@@ -14,14 +21,18 @@ export default function Presentation() {
     </Head>
 
     <main>
-        <div className="row col-9 mx-auto justify-content-center text-center bg-white">
-            <div className=" d-flex justify-content-center"><Banner /></div>
+
+    <div className="container bg-white">
+        <div className="row m-0">
+            <div className="col d-flex justify-content-center">
+                <Banner />
+            </div>
         </div>
-        <div className="row m-0 justify-content-center">
-            <div className="col col-md-9 col-lg-9 pb-5 pt-5 bg-white d-lg-flex justify-content-center">
-                <div className="col-8 col-lg-4 mx-auto mx-lg-3">
-                    <div className="shadow">
+        <div className="row mx-4 pb-5 d-flex flex-column flex-lg-row">
+            <div className="col mx-auto pt-5 text-center">
+                <div className="w-75 mx-auto shadow">
                     <Image className="border rounded "
+                        onClick={handleShow}
                         src="/images/Recruter Anne Denicourt.jpg"
                         alt=""
                         width={1240}
@@ -29,37 +40,57 @@ export default function Presentation() {
                         layout="responsive"
                         priority='true'
                     />
-                    </div>
+                </div> 
+                <span className="infos me-4" onClick={handleShow}><i className="bi bi-search fs-4 me-2"></i>Zoom</span>             
+                <Modal  show={show} onHide={handleClose}>
+                    <Modal.Body>
+                        <img src="/images/Recruter Anne Denicourt.jpg" alt="" width="1000" />
+                    </Modal.Body>
+                </Modal>               
+            </div>
+            <div className="col mx-auto pt-5 px-5 text-center text-lg-start">
+                <h2 className="mt-5 mt-lg-0 mb-lg-4">Faisons connaissance...</h2>
+                <div className="">
+                    Développeuse web avec une appétence toute particulière pour le framework React.js, 
+                    je me suis engagée dans cette voie professionnelle avant tout par passion. 
+                    Quoi de plus grisant et de plus stimulant que de créer un site, de le faire fonctionner 
+                    et de chercher des solutions lorsqu’un problème apparaît ? <br />
+                    Une vraie révélation pour moi avec l’envie chaque jour d’en apprendre toujours davantage.<br />
+                    Formée par OpenClassRooms et également autodidacte, je fais preuve d’une grande capacité d’autonomie
+                    et de beaucoup de ténacité, qualités non négligeables dans le métier de développeur web. <br />
+                    Je suis sensible à l’UX, mais aussi à l’UI et tout ce qui touche à l’aspect esthétique d’un site internet.
+                    Un site fonctionnel c’est parfait mais s’il est agréable à utiliser et à regarder, c’est encore mieux ! <br />
+                    Outre ma grande expérience dans le monde de la communication et ma vie professionnelle riche et variée, c’est mon côté passionné qui pourrait me distinguer de la plupart des développeurs.
+                    Comme dans tout ce que j’entreprends, je crée un site internet avec le cœur en faisant appel à ma part créative, mon sens du graphisme et mon goût pour le travail bien fait de façon à satisfaire les attentes du client et ceux de l’utilisateur.
+                    Et j’adore ça !
                 </div>
-                <div className="col-8 col-lg-5 px-lg-5 mx-auto mx-lg-0 text-center text-lg-start">
-                    <h2 className="mt-5 mt-lg-0 mb-lg-4">Faisons connaissance...</h2>
-                    <div className="">
-                        Développeuse web avec une appétence toute particulière pour le framework React.js, 
-                        je me suis engagée dans cette voie professionnelle avant tout par passion. 
-                        Quoi de plus grisant et de plus stimulant que de créer un site, de le faire fonctionner 
-                        et de chercher des solutions lorsqu’un problème apparaît ? <br />
-                        Une vraie révélation pour moi avec l’envie chaque jour d’en apprendre toujours davantage.<br />
-                        Formée par OpenClassRooms et également autodidacte, je fais preuve d’une grande capacité d’autonomie
-                        et de beaucoup de ténacité, qualités non négligeables dans le métier de développeur web. <br />
-                        Je suis sensible à l’UX, mais aussi à l’UI et tout ce qui touche à l’aspect esthétique d’un site internet.
-                        Un site fonctionnel c’est parfait mais s’il est agréable à utiliser et à regarder, c’est encore mieux ! <br />
-                        Outre ma grande expérience dans le monde de la communication et ma vie professionnelle riche et variée, c’est mon côté passionné qui pourrait me distinguer de la plupart des développeurs.
-                        Comme dans tout ce que j’entreprends, je crée un site internet avec le cœur en faisant appel à ma part créative, mon sens du graphisme et mon goût pour le travail bien fait de façon à satisfaire les attentes du client et ceux de l’utilisateur.
-                        Et j’adore ça !
-                    </div>
-                    <div className="w-50 mt-5 mx-auto pb-5">
-                        <Image className={`${styles.image}`}
-                            src="/images/girl2.png"
-                            alt=""
-                            width={500}
-                            height={325} 
-                            layout="responsive"
-                            priority='true'
-                        />
-                    </div>
-                </div>
+                <div className="w-50 mt-5 mx-auto pb-5 d-none d-lg-block">
+                    <Image className={`${styles.image}`}
+                        src="/images/girl2.png"
+                        alt=""
+                        width={500}
+                        height={325} 
+                        layout="responsive"
+                        priority='true'
+                    />
+                </div>     
             </div>
         </div>
+        <div className="row m-0">
+            <div className="col d-flex justify-content-center">
+                <div className="w-50 mt-5 mx-auto pb-5 d-block d-lg-none">
+                    <Image className={`${styles.image}`}
+                        src="/images/girl2.png"
+                        alt=""
+                        width={500}
+                        height={325} 
+                        layout="responsive"
+                        priority='true'
+                    />
+                </div> 
+            </div>
+        </div>
+    </div>
     </main>
     </div>
   )

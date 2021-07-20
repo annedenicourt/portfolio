@@ -17,13 +17,16 @@ export default function Portfolio() {
     </Head>
 
     <main>
-        <div className="row col-9 mx-auto justify-content-center text-center bg-white">
-            <div className=" d-flex justify-content-center"><Banner /></div>
-        </div>
 
-        <div className="row col-9 mx-auto pt-5 d-flex flex-column flex-lg-row justify-content-center text-center bg-white">
+    <div className="container bg-white">
+        <div className="row m-0">
+            <div className="col d-flex justify-content-center">
+                <Banner />
+            </div>
+        </div>
+        <div className="row mx-auto mt-5 d-flex flex-column flex-md-row justify-content-center">
             {projects.map(project => (
-                <div className="col col-lg-5 mb-5" key={project.id}>
+                <div className="col col-md-5 mb-5 text-center" key={project.id}>
                     <CardProject 
                     id={project.id}
                     name={project.name}
@@ -37,7 +40,7 @@ export default function Portfolio() {
                 </div>
             ))}
         </div>
-        
+    </div>
     </main>
     </div>
   )

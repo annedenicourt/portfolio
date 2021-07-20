@@ -3,8 +3,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Banner from '../Components/Banner'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
+import { useState } from "react";
 
 export default function CV() {
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
   return (
     <div className={styles.container}>
@@ -15,13 +22,17 @@ export default function CV() {
     </Head>
 
     <main>
-        <div className="row col-9 mx-auto justify-content-center text-center bg-white">
-            <div className=" d-flex justify-content-center"><Banner /></div>
+    <div className="container bg-white">
+        <div className="row m-0">
+            <div className="col d-flex justify-content-center">
+                <Banner />
+            </div>
         </div>
-        <div className="row m-0 justify-content-center">
-            <div className="col col-md-9 col-lg-9 px-0 pt-5 position-relative bg-white">
-                <div className="w-50 mx-auto shadow mb-5">
+        <div className="row mx-4 d-flex flex-column flex-lg-row">
+            <div className="col mx-auto pt-5 text-center">
+                <div className="w-50 mx-auto shadow mb-3">
                     <Image className="rounded"
+                        onClick={handleShow}
                         src="/images/CV.jpg"
                         alt=""
                         width={1240}
@@ -29,12 +40,18 @@ export default function CV() {
                         layout="responsive"
                         priority='true'
                     />
-                </div>
+                </div>  
+                <span className="infos me-4" onClick={handleShow}><i className="bi bi-search fs-4 me-2" ></i>Zoom</span>             
+                <Modal size="lg" show={show} onHide={handleClose}>
+                    <Modal.Body>
+                        <img src="/images/CV.jpg" alt="" width="1000" />
+                    </Modal.Body>
+                </Modal>
             </div>
         </div>
-
-        <div className="row col-9 mx-auto d-flex justify-content-center text-center bg-white" id="technos">
-            <div className="col col-lg-5 mb-5">
+        <div className="row mx-4 d-flex flex-column flex-lg-row text-center">
+            <h4 className="mt-5">TECHNOS</h4>
+            <div className="col mx-auto pt-5 text-center">
                 <div className={`${styles.bg_card} rounded fs-5 shadow`}>
                     <div className="p-4">
                         <i className="bi bi-laptop fs-1"></i>
@@ -44,9 +61,9 @@ export default function CV() {
                         <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>REACT/NEXT</p>
                         <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>BOOTSTRAP/TAILWIND</p>
                     </div>
-                </div>
+                </div>       
             </div>
-            <div className="col col-lg-5">
+            <div className="col mx-auto pt-5 text-center">
                 <div className={`${styles.bg_card} rounded fs-5 shadow`}>
                     <div className="p-4">
                         <i className="bi bi-server fs-1"></i>
@@ -56,9 +73,10 @@ export default function CV() {
                         <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>API REST</p>
                         <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>MYSQL/MONGODB</p>
                     </div>
-                </div>
+                </div>       
             </div>
         </div>
+    </div>
     </main>
     </div>
   )

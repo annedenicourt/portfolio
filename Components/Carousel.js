@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Carousel() {
 
     return (  
-        <div id="carouselExampleCaptions" className="carousel carousel-dark slide carousel-fade col-10 p-0 shadow " data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" className="carousel carousel-dark slide carousel-fade col-10 p-0 shadow mx-auto" data-bs-ride="carousel">
                 <div className="carousel-inner ">
                     <div className="carousel-item active">
                         <img src="/images/reservia.png" className="d-block w-75 mx-auto" alt="..."/>
@@ -30,6 +30,12 @@ export default function Carousel() {
                         <img src="/images/mystore.png" className="d-block w-75 mx-auto" alt="..."/>
                         <div className="carousel-caption d-none d-md-block fs-5">
                         CRÉATION D'UN SITE E-COMMERCE AVEC REACT/REDUX
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <img src="/images/groupomania.png" className="d-block w-75 mx-auto" alt="..."/>
+                        <div className="carousel-caption d-none d-md-block fs-5">
+                        CRÉATION D'UN RÉSEAU SOCIAL D'ENTREPRISE AVEC REACT/MYSQL/NODE
                         </div>
                     </div>
                 </div>

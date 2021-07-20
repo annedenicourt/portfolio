@@ -21,7 +21,7 @@ export default function CardProject(props) {
                 </div>
             </div>
 
-        <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>{props.title}</Modal.Title>
                 </Modal.Header>
@@ -34,12 +34,12 @@ export default function CardProject(props) {
                     <h4 className="mt-3 fw-bold">Contraintes techniques :</h4>
                     <Link href={props.github}><a target="_blank" title="Voir le code"><div className="text-dark">Voir le repository GITHUB</div></a></Link>
                 </Modal.Body>
-                <Modal.Footer>
+                <Modal.Footer className="justify-content-center">
                     <Button variant="secondary" onClick={handleClose}>
                         Fermer
                     </Button>
                 </Modal.Footer>
-        </Modal>
+            </Modal>
         </>
     )
 }

@@ -14,13 +14,16 @@ export default function CV() {
         <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
-        <div className="row m-0 justify-content-center d-flex flex-row">
-            <div className="col col-md-9 col-lg-9 p-0 bg-white"><Banner /></div>
+    <div className="container bg-white">
+        <div className="row m-0">
+            <div className="col d-flex justify-content-center">
+                <Banner />
+            </div>
         </div>
-        <div className="row m-0 justify-content-center d-flex flex-row">
-            <div className="col col-md-5 col-lg-5 p-0 bg-white">
-                <form className=" text-center ps-5 rounded" id="contact_form">
-                    <h2 className="pt-4 text-center">PARLONS-NOUS !</h2>
+        <div className="row m-0 d-flex flex-column flex-md-row">
+            <div className="col p-2">
+                <form className="text-center rounded" id="contact_form">
+                    <h2 className="pt-4">PARLONS-NOUS !</h2>
                     <input type="hidden" name="contact_number" />
                     <div className="">
                         <label htmlFor="name"></label>
@@ -35,8 +38,8 @@ export default function CV() {
                     <button className='button_item button btn btn-outline-dark mt-3 mb-3 fw-bold' type="submit"><i className="bi bi-envelope-fill"></i> ENVOYER</button>
                 </form>
             </div>
-            <div className="col col-md-4 col-lg-4 p-0 bg-white d-flex align-items-center">
-                <Flip><div className="col">
+            <div className="col p-0 my-5 my-md-auto">
+                <div className="">
                     <Image className={`${styles.image}`}
                         src="/images/contact.svg"
                         alt=""
@@ -45,9 +48,10 @@ export default function CV() {
                         layout="responsive"
                         priority='true'
                     />
-                </div></Flip>
+                </div>
             </div> 
         </div>
+    </div>
     </main>
     </div>
   )

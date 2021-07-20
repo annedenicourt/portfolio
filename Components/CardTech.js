@@ -46,11 +46,10 @@ export default function CardTech() {
     const toggleOpen1 = () => setIsOpen1(!isOpen1);
     const toggleOpen = () => setIsOpen(!isOpen);
 
-    return (  
-        <div className="row col-9 mx-auto d-flex flex-column flex-lg-row justify-content-center text-center bg-white">
-            <div className="col col-lg-5 mb-5 ">
-                <div className={`${styles.bg_card} rounded fs-5 shadow`}>
-                    <div className="p-4">
+    return (  <>
+        <div className="row m-0 d-flex flex-column flex-md-row justify-content-center">
+            <div className="col-10 col-md-5 mx-auto mb-5">
+                <div className={`${styles.bg_card} rounded fs-5 p-4 shadow`}>
                     <AnimateSharedLayout>
                         <i className="bi bi-laptop fs-1"></i>
                         <h4 className="text-white mt-3 mb-3">Du FRONT...</h4>
@@ -61,12 +60,10 @@ export default function CardTech() {
                             </motion.div>
                         </motion.div>
                     </AnimateSharedLayout>
-                    </div>
-                </div>
+                </div> 
             </div>
-            <div className="col col-lg-5">
-                <div className={`${styles.bg_card} rounded fs-5 shadow`}>
-                    <div className="p-4">
+            <div className="col-10 col-md-5 mx-auto mb-5">
+                <div className={`${styles.bg_card} rounded fs-5 p-4 shadow`}>
                     <AnimateSharedLayout>
                         <i className="bi bi-server fs-1"></i>
                         <h4 className="text-white mt-3 mb-3">...et aussi du BACK !</h4>
@@ -77,13 +74,16 @@ export default function CardTech() {
                             </motion.div>
                         </motion.div>
                     </AnimateSharedLayout>
-                    </div>
-                </div>
+                </div> 
             </div>
-            <div className=""><Link href="/mon-cv/#technos"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-14`}>En savoir plus</button></Link></div>
-            <div><Link href="#section3"><button className="animate-bounce button-scroll mt-5 text-center"><i className="bi bi-arrow-down-circle-fill fs-1 p-2"></i></button></Link></div>
+            <div className="">
+                <div className=""><Link href="/mon-cv/#technos"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-14`}>En savoir plus</button></Link></div>
+                <div><Link href="#section3"><button className="animate-bounce button-scroll mt-5 text-center"><i className="bi bi-arrow-down-circle-fill fs-1 p-2"></i></button></Link></div>
+            </div>
         </div>
 
         
+
+        </>
     )
 }
