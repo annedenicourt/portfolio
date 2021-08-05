@@ -170,7 +170,7 @@ export default function Home() {
             <h2 className="mt-5 fs-1 fw-bold text-center">
                 <Typewriter
                     options={{
-                        strings: ['PARLONS-NOUS', 'ET COLLABORONS ENSEMBLE !'],
+                        strings: ['PARLONS-NOUS', 'ET COLLABORONS !'],
                         autoStart: true,
                         loop: true,
                     }}

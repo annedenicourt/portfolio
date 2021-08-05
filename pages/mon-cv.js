@@ -74,40 +74,40 @@ export default function CV() {
             <div className="col mx-auto px-0 px-lg-2 pt-5 text-start">
                 <h3 className="mb-5 text-center text-decoration-underline">PARCOURS PROFESSIONNEL</h3>
                 <div className="pb-5">
-                    <p className="mb-4">
+                    <div className="mb-4">
                         <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>DÉVELOPPEUR WEB </div> 
                         <div className="ms-4">Entreprise : OpenClassRooms</div>
                         <div className="ms-4">Période : octobre 2020 à mai 2021</div>
-                    </p>
-                    <p className="mb-4">
+                    </div>
+                    <div className="mb-4">
                         <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>RÉDACTRICE WEB SEO</div> 
                         <div className="ms-4">Entreprise : FAMILY WEB (TOULOUSE)</div>
                         <div className="ms-4">Période : novembre 2019 à février 2020</div>
-                    </p>
-                    <p className="mb-4">
+                    </div>
+                    <div className="mb-4">
                         <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>RÉDACTRICE MAGAZINE</div> 
                         <div className="ms-4">Entreprise : SO COSYSSIME (MONTAUBAN)</div>
                         <div className="ms-4">Période : depuis mars 2018</div>
-                    </p>
-                    <p className="mb-4">
+                    </div>
+                    <div className="mb-4">
                         <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>JOURNALISTE</div> 
                         <div className="ms-4">Entreprise : LE PETIT JOURNAL (MONTAUBAN)</div>
                         <div className="ms-4">Période : août 2018 à juillet 2019</div>
-                    </p>
-                    <p className="mb-4">
+                    </div>
+                    <div className="mb-4">
                         <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>RÉDACTRICE WEB FREELANCE</div> 
                         <div className="ms-4">Période : novembre 2011 à avril 2021</div>
-                    </p>
-                    <p className="mb-4">
+                    </div>
+                    <div className="mb-4">
                         <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>CONCEPTRICE-RÉDACTRICE LEADER</div> 
                         <div className="ms-4">Entreprise : 3 SUISSES (LILLE)</div>
                         <div className="ms-4">Période : juillet 2006 à novembre 2011</div>
-                    </p>
-                    <p className="mb-4">
+                    </div>
+                    <div className="mb-4">
                         <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>CONCEPTRICE-RÉDACTRICE CATALOGUE</div> 
                         <div className="ms-4">Entreprise : DAXON (LILLE)</div>
                         <div className="ms-4">Période : décembre 2003 à juillet 2006</div>
-                    </p>
+                    </div>
                 </div>
 
                 <div className="mb-5 p-3 fs-5 text-center border rounded shadow">
@@ -120,32 +120,32 @@ export default function CV() {
             <div className="col col-lg-6 mx-auto pt-5 text-end">
                 <h3 className="mb-5 text-end text-decoration-underline">DIPLÔMES</h3>
                 <div>
-                    <p className="">
+                    <div className="">
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">TITRE DE DÉVELOPPEUR WEB (OpenClassRooms) </span> 
                         <div className="ms-4">d'octobre 2020 à mai 2021</div>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">TITRE DE CONCEPTEUR RÉDACTEUR (Cepreco, Roubaix) </span> 
                         <div className="ms-4">Major de promotion</div>
                         <div className="ms-4">de septembre 2002 à juin 2003</div>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">LICENCE PLURIDISCIPLINAIRE (Lille III) </span> 
                         <div className="ms-4">juin 1999</div>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">DEUG LETTRES MODERNES (Lille III) </span> 
                         <div className="ms-4">juin 1998</div>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">BAC L (Noyon, 60)</span> 
                         <div className="ms-4">juin 1996</div>
-                    </p>
+                    </div>
                 </div>
             </div>
             <div className="col col-lg-6 mx-auto pt-5 text-center">
