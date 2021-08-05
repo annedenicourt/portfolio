@@ -10,8 +10,19 @@ import { useState } from "react";
 export default function CV() {
 
     const [show, setShow] = useState(false);
+    const [show2, setShow2] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const handleClose2 = () => setShow2(false);
+    const handleShow2 = () => setShow2(true);
+
+    function zoom() {
+        window.open('/images/Recruter Anne Denicourt.jpg', '_blank');
+    } 
+    function zoom2() {
+        window.open('/images/CV.jpg', '_blank');
+    } 
+    
 
   return (
     <div className={styles.container}>
@@ -28,11 +39,120 @@ export default function CV() {
                 <Banner />
             </div>
         </div>
-        <div className="row mx-4 d-flex flex-column flex-lg-row">
-            <div className="col mx-auto pt-5 text-center">
+        <div className="row m-0 justify-content-center">
+            <h2 className="mt-5 text-center">FAISONS CONNAISSANCE...</h2>
+            <div className="col col-lg-10">
+                <div className="mt-4 fs-5 text-center">
+                    Formée par OpenClassRooms et également autodidacte, je fais preuve d’une grande capacité d’autonomie
+                    et de beaucoup de ténacité, qualités non négligeables dans le métier de développeur web.
+                    Je suis sensible à l’UX, mais aussi à l’UI et tout ce qui touche à l’aspect esthétique d’un site internet.
+                    Un site fonctionnel c’est parfait mais s’il est agréable à utiliser et à regarder, c’est encore mieux !
+                </div>
+            </div>
+        </div>
+
+        <div className="row mx-0 mx-md-4 d-flex flex-column flex-lg-row">
+            <div className="col mx-auto p-0 pt-5 text-center">
+                <div className="w-75 mx-auto shadow">
+                    <Image className="border rounded "
+                        onClick={zoom}
+                        src="/images/Recruter Anne Denicourt.jpg"
+                        alt=""
+                        width={1240}
+                        height={3248} 
+                        layout="responsive"
+                        priority='true'
+                    />
+                </div> 
+                <div className="infos mt-3 me-4" onClick={handleShow}><i className="bi bi-search fs-4 me-2"></i>Zoom</div>             
+                <Modal  show={show} onHide={handleClose}>
+                    <Modal.Body>
+                        <img src="/images/Recruter Anne Denicourt.jpg" alt="" width="1000" />
+                    </Modal.Body>
+                </Modal>        
+            </div>
+            <div className="col mx-auto px-0 px-lg-2 pt-5 text-start">
+                <h3 className="mb-5 text-center text-decoration-underline">PARCOURS PROFESSIONNEL</h3>
+                <div className="pb-5">
+                    <p className="mb-4">
+                        <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>DÉVELOPPEUR WEB </div> 
+                        <div className="ms-4">Entreprise : OpenClassRooms</div>
+                        <div className="ms-4">Période : octobre 2020 à mai 2021</div>
+                    </p>
+                    <p className="mb-4">
+                        <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>RÉDACTRICE WEB SEO</div> 
+                        <div className="ms-4">Entreprise : FAMILY WEB (TOULOUSE)</div>
+                        <div className="ms-4">Période : novembre 2019 à février 2020</div>
+                    </p>
+                    <p className="mb-4">
+                        <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>RÉDACTRICE MAGAZINE</div> 
+                        <div className="ms-4">Entreprise : SO COSYSSIME (MONTAUBAN)</div>
+                        <div className="ms-4">Période : depuis mars 2018</div>
+                    </p>
+                    <p className="mb-4">
+                        <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>JOURNALISTE</div> 
+                        <div className="ms-4">Entreprise : LE PETIT JOURNAL (MONTAUBAN)</div>
+                        <div className="ms-4">Période : août 2018 à juillet 2019</div>
+                    </p>
+                    <p className="mb-4">
+                        <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>RÉDACTRICE WEB FREELANCE</div> 
+                        <div className="ms-4">Période : novembre 2011 à avril 2021</div>
+                    </p>
+                    <p className="mb-4">
+                        <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>CONCEPTRICE-RÉDACTRICE LEADER</div> 
+                        <div className="ms-4">Entreprise : 3 SUISSES (LILLE)</div>
+                        <div className="ms-4">Période : juillet 2006 à novembre 2011</div>
+                    </p>
+                    <p className="mb-4">
+                        <div className="fs-5 fw-bold"><i className="bi bi-stop-fill me-2 fs-6 text-warning"></i>CONCEPTRICE-RÉDACTRICE CATALOGUE</div> 
+                        <div className="ms-4">Entreprise : DAXON (LILLE)</div>
+                        <div className="ms-4">Période : décembre 2003 à juillet 2006</div>
+                    </p>
+                </div>
+
+                <div className="mb-5 p-3 fs-5 text-center border rounded shadow">
+                    Comme dans tout ce que j’entreprends, je crée un site internet avec le cœur en faisant appel à ma part créative, mon sens du graphisme et mon goût pour le travail bien fait de façon à satisfaire les attentes du client et ceux de l’utilisateur.
+                    Et j’adore ça !
+                </div>   
+            </div>
+        </div>
+        <div className="row mx-0 pb-5 d-flex flex-column flex-lg-row">
+            <div className="col col-lg-6 mx-auto pt-5 text-end">
+                <h3 className="mb-5 text-end text-decoration-underline">DIPLÔMES</h3>
+                <div>
+                    <p className="">
+                        <i className="bi bi-stop-fill me-2 text-warning"></i>
+                        <span className="fs-5 fw-bold">TITRE DE DÉVELOPPEUR WEB (OpenClassRooms) </span> 
+                        <div className="ms-4">d'octobre 2020 à mai 2021</div>
+                    </p>
+                    <p>
+                        <i className="bi bi-stop-fill me-2 text-warning"></i>
+                        <span className="fs-5 fw-bold">TITRE DE CONCEPTEUR RÉDACTEUR (Cepreco, Roubaix) </span> 
+                        <div className="ms-4">Major de promotion</div>
+                        <div className="ms-4">de septembre 2002 à juin 2003</div>
+                    </p>
+                    <p>
+                        <i className="bi bi-stop-fill me-2 text-warning"></i>
+                        <span className="fs-5 fw-bold">LICENCE PLURIDISCIPLINAIRE (Lille III) </span> 
+                        <div className="ms-4">juin 1999</div>
+                    </p>
+                    <p>
+                        <i className="bi bi-stop-fill me-2 text-warning"></i>
+                        <span className="fs-5 fw-bold">DEUG LETTRES MODERNES (Lille III) </span> 
+                        <div className="ms-4">juin 1998</div>
+                    </p>
+                    <p>
+                        <i className="bi bi-stop-fill me-2 text-warning"></i>
+                        <span className="fs-5 fw-bold">BAC L (Noyon, 60)</span> 
+                        <div className="ms-4">juin 1996</div>
+                    </p>
+                </div>
+            </div>
+            <div className="col col-lg-6 mx-auto pt-5 text-center">
+                <h3 className="mb-4 text-center text-decoration-underline">MON CV</h3>
                 <div className="w-50 mx-auto shadow mb-3">
                     <Image className="rounded"
-                        onClick={handleShow}
+                        onClick={zoom2}
                         src="/images/CV.jpg"
                         alt=""
                         width={1240}
@@ -41,41 +161,20 @@ export default function CV() {
                         priority='true'
                     />
                 </div>  
-                <span className="infos me-4" onClick={handleShow}><i className="bi bi-search fs-4 me-2" ></i>Zoom</span>             
-                <Modal size="lg" show={show} onHide={handleClose}>
+                
+                <span className="infos me-4" onClick={handleShow2}><i className="bi bi-search fs-4 me-2" ></i>Zoom</span>
+                <a className="text-dark" href="/images/CV.jpg" download><i className="bi bi-download fs-4 me-2"></i> Télécharger</a>            
+                <Modal size="lg" show={show2} onHide={handleClose2}>
                     <Modal.Body>
-                        <img src="/images/CV.jpg" alt="" width="1000" />
+                        <img src="/images/CV.jpg" alt="" />
                     </Modal.Body>
                 </Modal>
             </div>
         </div>
-        <div className="row mx-4 d-flex flex-column flex-lg-row text-center">
-            <h4 className="mt-5">TECHNOS</h4>
-            <div className="col mx-auto pt-5 text-center">
-                <div className={`${styles.bg_card} rounded fs-5 shadow`}>
-                    <div className="p-4">
-                        <i className="bi bi-laptop fs-1"></i>
-                        <h4 className="mt-4 mb-5">FRONTEND</h4>                            
-                        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>HTML/CSS</p>
-                        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>JAVASCRIPT</p>
-                        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>REACT/NEXT</p>
-                        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>BOOTSTRAP/TAILWIND</p>
-                    </div>
-                </div>       
-            </div>
-            <div className="col mx-auto pt-5 text-center">
-                <div className={`${styles.bg_card} rounded fs-5 shadow`}>
-                    <div className="p-4">
-                        <i className="bi bi-server fs-1"></i>
-                        <h4 className="mt-4 mb-5">BACKEND</h4>
-                        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>NODE</p>
-                        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>EXPRESS</p>
-                        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>API REST</p>
-                        <p className=""><i className="bi bi-plus-circle-dotted me-3"></i>MYSQL/MONGODB</p>
-                    </div>
-                </div>       
-            </div>
-        </div>
+
+
+
+        
     </div>
     </main>
     </div>

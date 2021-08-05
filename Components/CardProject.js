@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import styles from '../styles/Home.module.css'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import { useState } from "react";
@@ -15,13 +16,13 @@ export default function CardProject(props) {
                 <div className="card-title mt-2">{props.name}</div>
                 <img src={props.image} alt="" />
                 <div className="card-body">
-                    <span className="infos border rounded-pill px-2 py-1 me-4" onClick={handleShow}><i className="bi bi-plus" ></i>d'infos</span>
-                    <Link href={props.github}><a className="border rounded-pill px-2 py-1 text-dark me-4" target="_blank" title="Voir le code"><i className="bi bi-github me-2 text-dark"></i>Code</a></Link>                      
-                    <Link href={props.link}><a className="border rounded-pill px-2 py-1 text-dark me-4" target="_blank" title="Voir le site"><i className="bi bi-link me-2 text-dark"></i>Voir</a></Link>
+                    <Button className={`${styles.bouton} border rounded-pill me-3`} onClick={handleShow}><i className="bi bi-plus me-1" ></i>d'infos</Button>
+                    <Button className={`${styles.bouton} border rounded-pill me-3`} href={props.github} target="_blank"><i className="bi bi-github me-2" ></i>Code</Button>
+                    <Button className={`${styles.bouton} border rounded-pill`} href={props.link} target="_blank"><i className="bi bi-link me-2" ></i>Voir</Button>
                 </div>
             </div>
 
-            <Modal show={show} onHide={handleClose}>
+            <Modal size="lg" show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>{props.title}</Modal.Title>
                 </Modal.Header>

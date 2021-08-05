@@ -8,19 +8,23 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.3.0",
+    "@heroicons/react": "^1.0.2",
     "bootstrap": "^5.0.0-beta3",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^4.1.17",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-awesome-reveal": "^3.8.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "17.0.2",
-    "react-images-viewer": "^1.6.7",
+    "react-image-lightbox": "^5.1.4",
     "react-medium-image-zoom": "^4.3.4",
     "react-reveal": "^1.2.2",
-    "react-zoom-pan-pinch": "^2.1.2",
+    "react-typewriter-effect": "^1.1.0",
     "reactjs-popup": "^2.0.5",
-    "sweetalert2": "^10.16.3"
+    "sweetalert2": "^10.16.3",
+    "typewriter-effect": "^2.18.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",

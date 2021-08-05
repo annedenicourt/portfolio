@@ -1,7 +1,6 @@
 .active {
   color: black !important;
 }
-
 .active::after {
   content: "";
   display: block;
@@ -34,8 +33,15 @@
 .image {
   opacity: 0.6;
 }
+.job::before {
+  content: "";
+  display: block;
+  background-color: black;
+  height: 5px;
+  width: 5px;
+}
 .menu {
-  z-index: 1;
+  z-index: 2;
   position: fixed !important;
 }
 @media screen and (min-width: 360px) and (max-width: 991px) {
