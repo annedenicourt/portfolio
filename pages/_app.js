@@ -7,9 +7,9 @@ function MyApp({ Component, pageProps }) {
   return ( <>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta property="og:url" content="https://portfolio-annedenicourt.vercel.app/"/>
+      <meta property="og:url" content="https://annedenicourt.com/"/>
 			<meta property="og:title" content="Anne D. Développeur Web"/>
-			<meta property="og:image" content="https://portfolio-annedenicourt.vercel.app/images/laptop.png"/>
+			<meta property="og:image" content="https://annedenicourt.com/images/laptop.png"/>
       <meta property="og:description" content="Portfolio Anne Denicourt développeur web"/>
       <meta property="og:site_name" content="Portfolio Anne Denicourt développeur web" />
       <meta property="og:type" content="portfolio" />
