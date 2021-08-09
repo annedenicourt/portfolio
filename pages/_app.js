@@ -6,6 +6,8 @@ function MyApp({ Component, pageProps }) {
   
   return ( <>
     <Head>
+      <meta charset="utf-8" />
+      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta property="og:url" content="https://annedenicourt.com/"/>
 			<meta property="og:title" content="Anne D. Développeur Web"/>
