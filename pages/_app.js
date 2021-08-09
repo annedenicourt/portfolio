@@ -11,6 +11,8 @@ function MyApp({ Component, pageProps }) {
 			<meta property="og:title" content="Anne D. Développeur Web"/>
 			<meta property="og:image" content="https://portfolio-annedenicourt.vercel.app/images/laptop.png"/>
       <meta property="og:description" content="Portfolio Anne Denicourt développeur web"/>
+      <meta property="og:site_name" content="Portfolio Anne Denicourt développeur web" />
+      <meta property="og:type" content="portfolio" />
       <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
