@@ -20,7 +20,7 @@ export default function CardWood() {
                 <div className="">
                     <Image 
                         src="/images/bois2.jpg"
-                        alt="illustration passions"
+                        alt="illustration bois"
                         width={3104}
                         height={4720} 
                         layout="responsive"
@@ -32,7 +32,7 @@ export default function CardWood() {
                 <div className="">
                     <Image 
                         src="/images/bois3.jpg"
-                        alt="illustration passions"
+                        alt="illustration bois"
                         width={3104}
                         height={4720} 
                         layout="responsive"
@@ -44,7 +44,7 @@ export default function CardWood() {
                 <div className="">
                     <Image 
                         src="/images/bois4.jpg"
-                        alt="illustration passions"
+                        alt="illustration bois"
                         width={3104}
                         height={4720} 
                         layout="responsive"

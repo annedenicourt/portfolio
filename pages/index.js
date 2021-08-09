@@ -181,7 +181,7 @@ export default function Home() {
                 <div className="w-25 mx-auto mb-4">
                     <Image className={`${styles.image}`}
                         src="/images/phone.png"
-                        alt=""
+                        alt="illustration téléphone"
                         width={500}
                         height={213} 
                         layout="responsive"

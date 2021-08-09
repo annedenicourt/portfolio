@@ -56,7 +56,7 @@ export default function CV() {
                     <Image className="border rounded "
                         onClick={zoom}
                         src="/images/Recruter Anne Denicourt.jpg"
-                        alt=""
+                        alt="recruter Anne Denicourt développeur web"
                         width={1240}
                         height={3248} 
                         layout="responsive"
@@ -153,7 +153,7 @@ export default function CV() {
                     <Image className="rounded"
                         onClick={zoom2}
                         src="/images/CV.jpg"
-                        alt=""
+                        alt="CV Anne Denicourt développeur web"
                         width={1240}
                         height={1754} 
                         layout="responsive"
@@ -165,7 +165,7 @@ export default function CV() {
                 <a className="text-dark" href="/images/CV.jpg" download><i className="bi bi-download fs-4 me-2"></i> Télécharger</a>            
                 <Modal size="lg" show={show2} onHide={handleClose2}>
                     <Modal.Body>
-                        <img src="/images/CV.jpg" alt="" />
+                        <img src="/images/CV.jpg" alt="CV Anne Denicourt développeur web" />
                     </Modal.Body>
                 </Modal>
             </div>

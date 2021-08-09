@@ -20,7 +20,7 @@ export default function CardDeco() {
                 <div className="">
                     <Image 
                         src="/images/bakery6.jpg"
-                        alt="illustration passions"
+                        alt="illustration patisserie"
                         width={3104}
                         height={4720} 
                         layout="responsive"
@@ -32,7 +32,7 @@ export default function CardDeco() {
                 <div className="">
                     <Image 
                         src="/images/bakery2.jpg"
-                        alt="illustration passions"
+                        alt="illustration patisserie"
                         width={3104}
                         height={4720} 
                         layout="responsive"
@@ -44,7 +44,7 @@ export default function CardDeco() {
                 <div className="">
                     <Image 
                         src="/images/bakery3.jpg"
-                        alt="illustration passions"
+                        alt="illustration patisserie"
                         width={3104}
                         height={4720} 
                         layout="responsive"

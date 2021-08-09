@@ -20,7 +20,7 @@ export default function CardPottery() {
                 <div className="">
                     <Image 
                         src="/images/poterie2.jpg"
-                        alt="illustration passions"
+                        alt="illustration poterie"
                         width={3104}
                         height={4720} 
                         layout="responsive"
@@ -32,7 +32,7 @@ export default function CardPottery() {
                 <div className="">
                     <Image 
                         src="/images/poterie8.jpg"
-                        alt="illustration passions"
+                        alt="illustration poterie"
                         width={3104}
                         height={4720} 
                         layout="responsive"
@@ -44,7 +44,7 @@ export default function CardPottery() {
                 <div className="">
                     <Image 
                         src="/images/poterie6.jpg"
-                        alt="illustration passions"
+                        alt="illustration poterie"
                         width={3104}
                         height={4720} 
                         layout="responsive"

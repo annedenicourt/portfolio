@@ -14,7 +14,7 @@ export default function CardProject(props) {
         <>
             <div className="card fs-5 shadow">
                 <div className="card-title mt-2">{props.name}</div>
-                <img src={props.image} alt="" />
+                <img src={props.image} alt={props.name} />
                 <div className="card-body">
                     <Button className={`${styles.bouton} border rounded-pill me-3`} onClick={handleShow}><i className="bi bi-plus me-1" ></i>d'infos</Button>
                     <Button className={`${styles.bouton} border rounded-pill me-3`} href={props.github} target="_blank"><i className="bi bi-github me-2" ></i>Code</Button>
@@ -27,7 +27,7 @@ export default function CardProject(props) {
                     <Modal.Title>{props.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src={props.image} alt="" />
+                    <img src={props.image} alt={props.name} />
                     <h4 className="mt-3 fw-bold">Objectif :</h4>
                     <div className="">{props.description}</div>
                     <h4 className="mt-3 fw-bold">Technos utilisées :</h4>

@@ -15,7 +15,7 @@ export default function CardLang() {
         <div className="row m-0 text-center justify-content-center ">
             <div className="col-8 col-md-3 col-lg-3 mx-auto d-flex">
                 <Button variant="" ref={target} onClick={() => setShow(!show)}>
-                <img src="/images/anglais.png"></img>
+                <img src="/images/anglais.png" alt="drapeau anglais"></img>
                 <span className="d-block d-md-none">Technique</span>
                 </Button>
                 <Overlay target={target.current} show={show} placement="bottom">
@@ -26,7 +26,7 @@ export default function CardLang() {
                     )}
                 </Overlay>
                 <Button variant="" ref={target2} onClick={() => setShow2(!show2)}>
-                    <img src="/images/espagnol.png"></img>
+                    <img src="/images/espagnol.png" alt="drapeau espagnol"></img>
                     <span className="d-block d-md-none">Bilingue</span>
                 </Button>
                 <Overlay target={target2.current} show={show2} placement="bottom">
