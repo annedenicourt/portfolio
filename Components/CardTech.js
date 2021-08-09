@@ -1,5 +1,5 @@
 import styles from '../styles/Home.module.css'
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 
 function Content() {
@@ -53,7 +53,6 @@ function Content2() {
     );
 }
 
-
 export default function CardTech() {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -62,14 +61,6 @@ export default function CardTech() {
     const toggleOpen = () => setIsOpen(!isOpen);
     const toggleOpen1 = () => setIsOpen1(!isOpen1);
     const toggleOpen2 = () => setIsOpen2(!isOpen2);
-
-    const bounceTransition = {
-        y: {
-          duration: 0.7,
-          yoyo: Infinity,
-          ease: "easeOut",
-        },
-      }
 
     return (  <>
         <div className="row m-0 text-center d-flex flex-column flex-md-row justify-content-center">
@@ -80,7 +71,7 @@ export default function CardTech() {
                         <h4 className="text-white mt-3 mb-3">Du FRONT...</h4>
                         <motion.div layout initial={{ borderRadius: 25 }}>
                             <motion.div layout onClick={toggleOpen1} initial={{ borderRadius: 10 }}>
-                                <motion.div className="mb-3" layout>{isOpen1 ? <i className="bi bi-x-circle "></i>: <i className="bi bi-chevron-double-down fs-2"></i>}</motion.div>
+                                <motion.div className={`${styles.button_card} mb-3`} layout>{isOpen1 ? <i className="infos bi bi-x-circle "></i>: <i className="infos bi bi-chevron-double-down fs-2"></i>}</motion.div>
                                 <AnimatePresence>{isOpen1 && <Content />}</AnimatePresence>
                             </motion.div>
                         </motion.div>
@@ -94,7 +85,7 @@ export default function CardTech() {
                         <h4 className="text-white mt-3 mb-3">...et aussi du BACK</h4>
                         <motion.div layout initial={{ borderRadius: 25 }}>
                             <motion.div layout onClick={toggleOpen} initial={{ borderRadius: 10 }}>
-                                <motion.div className="mb-3" layout>{isOpen ? <i className="bi bi-x-circle "></i>: <i className="bi bi-chevron-double-down fs-2"></i>}</motion.div>
+                                <motion.div className={`${styles.button_card} mb-3`} layout>{isOpen ? <i className="infos bi bi-x-circle "></i>: <i className=" infos bi bi-chevron-double-down fs-2"></i>}</motion.div>
                                 <AnimatePresence>{isOpen && <Content1 />}</AnimatePresence>
                             </motion.div>
                         </motion.div>
@@ -108,14 +99,14 @@ export default function CardTech() {
                         <h4 className="text-white mt-3 mb-3">SEO/DESIGN</h4>
                         <motion.div layout initial={{ borderRadius: 25 }}>
                             <motion.div layout onClick={toggleOpen2} initial={{ borderRadius: 10 }}>
-                                <motion.div className="mb-3" layout>{isOpen2 ? <i className="bi bi-x-circle "></i>: <i className="bi bi-chevron-double-down fs-2"></i>}</motion.div>
+                                <motion.div className={`${styles.button_card} mb-3`} layout>{isOpen2 ? <i className="infos bi bi-x-circle "></i>: <i className="infos bi bi-chevron-double-down fs-2"></i>}</motion.div>
                                 <AnimatePresence>{isOpen2 && <Content2 />}</AnimatePresence>
                             </motion.div>
                         </motion.div>
                     </AnimateSharedLayout>
                 </div> 
             </div>
-        </div>
+        </div>  
     </>
     )
 }

@@ -67,10 +67,7 @@ export default function CardWood() {
                     setPhotoIndex((photoIndex + 1) % images.length)
                 }
             />
-            )}
-            
-
-            
+            )}          
         </div>
     </>
     )

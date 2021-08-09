@@ -4,8 +4,8 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Banner from '../Components/Banner'
 import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
 import { useState } from "react";
+import Footer from '../Components/Footer'
 
 export default function CV() {
 
@@ -23,7 +23,6 @@ export default function CV() {
         window.open('/images/CV.jpg', '_blank');
     } 
     
-
   return (
     <div className={styles.container}>
     <Head>
@@ -33,7 +32,7 @@ export default function CV() {
     </Head>
 
     <main>
-    <div className="container bg-white">
+    <div className="container bg-white pb-5">
         <div className="row m-0">
             <div className="col d-flex justify-content-center">
                 <Banner />
@@ -110,7 +109,7 @@ export default function CV() {
                     </div>
                 </div>
 
-                <div className="mb-5 p-3 fs-5 text-center border rounded shadow">
+                <div className={`${styles.bg_card} mb-5 p-3 fs-5 fw-bold text-center border rounded shadow`}>
                     Comme dans tout ce que j’entreprends, je crée un site internet avec le cœur en faisant appel à ma part créative, mon sens du graphisme et mon goût pour le travail bien fait de façon à satisfaire les attentes du client et ceux de l’utilisateur.
                     Et j’adore ça !
                 </div>   
@@ -120,23 +119,23 @@ export default function CV() {
             <div className="col col-lg-6 mx-auto pt-5 text-end">
                 <h3 className="mb-5 text-end text-decoration-underline">DIPLÔMES</h3>
                 <div>
-                    <div className="">
+                    <div className="mb-4">
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">TITRE DE DÉVELOPPEUR WEB (OpenClassRooms) </span> 
                         <div className="ms-4">d'octobre 2020 à mai 2021</div>
                     </div>
-                    <div>
+                    <div className="mb-4">
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">TITRE DE CONCEPTEUR RÉDACTEUR (Cepreco, Roubaix) </span> 
                         <div className="ms-4">Major de promotion</div>
                         <div className="ms-4">de septembre 2002 à juin 2003</div>
                     </div>
-                    <div>
+                    <div className="mb-4">
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">LICENCE PLURIDISCIPLINAIRE (Lille III) </span> 
                         <div className="ms-4">juin 1999</div>
                     </div>
-                    <div>
+                    <div className="mb-4">
                         <i className="bi bi-stop-fill me-2 text-warning"></i>
                         <span className="fs-5 fw-bold">DEUG LETTRES MODERNES (Lille III) </span> 
                         <div className="ms-4">juin 1998</div>
@@ -170,11 +169,9 @@ export default function CV() {
                     </Modal.Body>
                 </Modal>
             </div>
+            <div className="text-center"><Link href="/#contact"><button className={`${styles.bouton} btn btn-lg btn-secondary mt-5`}>Me contacter</button></Link></div>           
         </div>
-
-
-
-        
+        <Footer />
     </div>
     </main>
     </div>

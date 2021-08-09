@@ -16,10 +16,12 @@
   background-color: #1a2238 !important;
   color: white;
 }
-.bg_card:hover {
-  filter: brightness(1.4);
+.button_card {
+  transition: transform 0.2s;
 }
-
+.button_card:hover {
+  transform: scale(1.1);
+}
 .bouton {
   background-color: #1a2238 !important;
   color: white;

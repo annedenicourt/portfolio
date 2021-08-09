@@ -14,8 +14,8 @@ import CardWood from '../Components/CardWood'
 import CardDeco from '../Components/CardDeco'
 import CardBakery from '../Components/CardBakery'
 import Typewriter from 'typewriter-effect';
-
-
+import CardLang from '../Components/CardLang'
+import Footer from '../Components/Footer'
 
 export default function Home() {
 
@@ -98,29 +98,30 @@ export default function Home() {
 
             </div>
             <div className="col col-md-10 mx-auto text-center">
-                <h2 className="mt-5">Côté TECHNOS/COMPÉTENCES</h2>
-                <div className="w-25 mx-auto pt-3 pb-5">
+                <h3 className="mt-5 fst-italic">Côté TECHNOS/COMPÉTENCES </h3>
+                <div className="w-25 mx-auto pb-5">
                     <i className={`${styles.image} bi bi-gear fs-1`}></i>
                 </div>
             </div>
             <CardTech />
+            <CardLang />
             <div className="col mx-auto text-center">
-                <h2 className="mt-5">Côté HOBBIES/PASSIONS</h2>
+                <h3 className="mt-5 mb-4 fst-italic">Côté HOBBIES/PASSIONS</h3>
                 <div className="w-25 mx-auto">
                     <Image className={`${styles.image}`}
                         src="/images/heart2.png"
                         alt="illustration passions"
-                        width={500}
-                        height={501} 
+                        width={455}
+                        height={252} 
                         layout="responsive"
                         priority='true'
                     />
                 </div>
-                <CardPottery />
-                <CardWood />
-                <CardDeco />
-                <CardBakery />
             </div>
+            <CardPottery />
+            <CardWood />
+            <CardDeco />
+            <CardBakery />
         </div>
         {/* Section PROJETS */}
         <div className="row mx-0 mt-5 d-flex flex-column flex-md-row justify-content-center" id="projets">
@@ -176,8 +177,6 @@ export default function Home() {
                     }}
                 />
             </h2>
-            
-            
             <div className="col col-lg-8 mx-auto p-2 mt-5 mb-5">
                 <div className="w-25 mx-auto mb-4">
                     <Image className={`${styles.image}`}
@@ -191,9 +190,10 @@ export default function Home() {
                 </div>
                 <div className="d-flex justify-content-center">
                 </div>
-                <div className="mb-5 text-center fs-4">06 29 71 78 72</div>
+                <div className="mb-5 text-center fw-bold fs-4">06 29 71 78 72</div>
                 <Form />
             </div>
+            <Footer/>
         </div>
     </div>
     </main>
