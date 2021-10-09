@@ -35,7 +35,7 @@ export default function CV() {
     <div className="container bg-white pb-5">
         <div className="row m-0">
             <div className="col d-flex justify-content-center">
-                <Banner />
+                <div className={`${styles.menu}`}><Banner /></div>
             </div>
         </div>
         <div className="row m-0 justify-content-center">

@@ -105,25 +105,7 @@ export default function Home() {
             </div>
             <CardTech />
             <CardLang />
-            <div className="col mx-auto text-center">
-                <h3 className="mt-5 mb-4 fst-italic">Côté HOBBIES/PASSIONS</h3>
-                <div className="w-25 mx-auto">
-                    <Image className={`${styles.image}`}
-                        src="/images/heart2.png"
-                        alt="illustration passions"
-                        width={455}
-                        height={252} 
-                        layout="responsive"
-                        priority='true'
-                    />
-                </div>
-            </div>
-            <CardPottery />
-            <CardWood />
-            <CardDeco />
-            <CardBakery />
-        </div>
-        {/* Section PROJETS */}
+            {/* Section PROJETS */}
         <div className="row mx-0 mt-5 d-flex flex-column flex-md-row justify-content-center" id="projets">
             <h2 className="mt-5 pt-5 fs-1 fw-bold text-center">MES PROJETS</h2>
             <div className="w-25 mx-auto pt-5 pb-5">
@@ -154,7 +136,26 @@ export default function Home() {
                     />
                 </div>
             ))}
-                <Link href="#contact">
+                
+        </div>
+            <div className="col mx-auto text-center">
+                <h3 className="mt-5 mb-4 fst-italic">Côté HOBBIES/PASSIONS</h3>
+                <div className="w-25 mx-auto">
+                    <Image className={`${styles.image}`}
+                        src="/images/heart2.png"
+                        alt="illustration passions"
+                        width={455}
+                        height={252} 
+                        layout="responsive"
+                        priority='true'
+                    />
+                </div>
+            </div>
+            <CardPottery />
+            <CardWood />
+            <CardDeco />
+            <CardBakery />
+            <Link href="#contact">
                     <motion.button
                         className="button-scroll"
                         transition={bounceTransition}
@@ -166,6 +167,7 @@ export default function Home() {
                     </motion.button>
                 </Link>
         </div>
+        
         {/* Section CONTACT */}
         <div className="row m-0 d-flex flex-column flex-md-row" id="contact">
             <h2 className="mt-5 fs-1 fw-bold text-center">

@@ -31,9 +31,9 @@ export const projects = [
 	},
     {
 		id: 4,
-        name: 'Site e-commerce',
+        name: 'Site e-commerce (projet perso)',
         title: 'Construire un site e-commerce',
-		description: 'Création d\'un site e-commerce avec REACT/REDUX et mise en place du paiement en ligne',
+		description: 'Création d\'un site e-commerce avec REACT/REDUX, PWA et mise en place du paiement en ligne',
 		techno: 'REACT/REDUX/STRIPE',
         image: '/images/mystore.png',
         link: "https://anita-shop.fr/",
