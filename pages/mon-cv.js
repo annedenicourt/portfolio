@@ -38,8 +38,8 @@ export default function CV() {
                 <div className={`${styles.menu}`}><Banner /></div>
             </div>
         </div>
-        <div className="row m-0 justify-content-center">
-            <h2 className="mt-5 text-center">FAISONS CONNAISSANCE...</h2>
+        <div className="row mx-0 mt-5 justify-content-center">
+            <h2 className="mt-5 pt-3 text-center">FAISONS CONNAISSANCE...</h2>
             <div className="col col-lg-10">
                 <div className="mt-4 fs-5 text-center">
                     Formée par OpenClassRooms et également autodidacte, je fais preuve d’une grande capacité d’autonomie
