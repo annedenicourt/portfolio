@@ -246,3 +246,91 @@ export const bakerys = [
     image: "/images/bakery10.jpg",
   },
 ];
+
+export const jobs = [
+  {
+    id: 1,
+    job: "Développeur web fullstack",
+    society: "Miloé",
+    link: "www.miloe-sante.com",
+    period: "depuis janvier 2022",
+  },
+  {
+    id: 2,
+    job: "Développeur web stagiaire",
+    society: "Abelio",
+    link: "www.abelio.io",
+    period: "décembre 2021 à janvier 2022",
+  },
+  {
+    id: 3,
+    job: "Développeur web (formation)",
+    society: "OpenClassRooms",
+    period: "octobre 2020 à mai 2021",
+  },
+  {
+    id: 4,
+    job: "Rédactrice web SEO",
+    society: "Family web (Castelginest)",
+    period: "novembre 2019 à février 2020",
+  },
+  {
+    id: 5,
+    job: "Rédactrice magazine",
+    society: "So Cosyssime (Montauban)",
+    period: "depuis mars 2018",
+  },
+  {
+    id: 6,
+    job: "Rédactrice freelance",
+    society: "Le Petit Journal (Montauban)",
+    period: "août 2018 à juillet 2019",
+  },
+  {
+    id: 7,
+    job: "Rédactrice web freelance",
+    society: "",
+    period: "novembre 2011 à avril 2021",
+  },
+  {
+    id: 8,
+    job: "Conceptrice-rédactrice leader",
+    society: "3 Suisses (Lille)",
+    period: "juillet 2006 à novembre 2011",
+  },
+  {
+    id: 9,
+    job: "Conceptrice-rédactrice catalogue",
+    society: "Daxon (Lille)",
+    period: "décembre 20003 à juillet 2006",
+  },
+];
+
+export const diplomes = [
+  {
+    id: 1,
+    name: "Titre de développeur web (OpenClassRooms)",
+    period: "d'octobre 2020 à mai 2021",
+  },
+  {
+    id: 2,
+    name: "Titre de concepteur-rédacteur (Cepreco, Roubaix)",
+    period: "de septembre 2002 à juin 2003",
+    infos: "Major de promotion",
+  },
+  {
+    id: 3,
+    name: "Licence pluridisciplinaire (Lille III)",
+    period: "juin 1999",
+  },
+  {
+    id: 4,
+    name: "DEUG Lettres Modernes (Lille III)",
+    period: "juin 1998",
+  },
+  {
+    id: 5,
+    name: "Bac L (Noyon, 60)",
+    period: "juin 1996",
+  },
+];
