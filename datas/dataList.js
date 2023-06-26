@@ -302,7 +302,7 @@ export const jobs = [
     id: 9,
     job: "Conceptrice-rédactrice catalogue",
     society: "Daxon (Lille)",
-    period: "décembre 20003 à juillet 2006",
+    period: "décembre 2003 à juillet 2006",
   },
 ];
 
