@@ -5,7 +5,6 @@ import styles from "../styles/Home.module.css";
 import Banner from "../Components/Banner";
 import CardTech from "../Components/CardTech";
 import Form from "../Components/Form";
-import Flip from "react-reveal/Flip";
 import { motion } from "framer-motion";
 import { projects } from "../datas/dataList";
 import CardProject from "../Components/CardProject";
@@ -60,12 +59,18 @@ export default function Home() {
                   priority="true"
                 />
               </div>
-              <Flip left>
+              {/* <Flip left>
                 <h1 className="mt-5 fw-bold">Anne DENICOURT</h1>
               </Flip>
               <Flip right>
                 <h3 className="">Développeur Web</h3>
-              </Flip>
+              </Flip> */}
+              <div>
+                <h1 className="mt-5 fw-bold">Anne DENICOURT</h1>
+              </div>
+              <div right>
+                <h3 className="">Développeur Web</h3>
+              </div>
               <Link href="#presentation">
                 <motion.button
                   className="button-scroll"
