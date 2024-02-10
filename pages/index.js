@@ -249,13 +249,6 @@ export default function Home() {
           {/* Section CONTACT */}
           <div className="m-0 flex flex-col" id="contact">
             <div className="mt-5 font-bold text-4xl text-center">
-              {/* <Typewriter
-                options={{
-                  strings: ["PARLONS-NOUS", "ET COLLABORONS !"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              /> */}
               <div className="mx-auto mb-5 flex items-center justify-center text-center">
                 <div
                   className={`${styles.separator} w-20 md:w-44 h-0.5 ml-6`}
