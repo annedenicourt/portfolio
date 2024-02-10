@@ -13,9 +13,8 @@
 } */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./pages/**/*.js", "./components/**/*.js"],
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}", // Note the addition of the `app` directory.
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
 
@@ -23,9 +22,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      animation: ["hover"],
-    },
+    extend: {},
   },
   plugins: [],
 };
