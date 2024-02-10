@@ -26,4 +26,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  safelist: ["lg:w-1/3", "lg:px-5"],
 };
