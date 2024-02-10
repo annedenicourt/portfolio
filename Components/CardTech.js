@@ -1,164 +1,118 @@
 import styles from "../styles/Home.module.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { FiChevronsDown, FiChevronsUp } from "react-icons/fi";
+import { IoCodeSlashOutline } from "react-icons/io5";
+import { BsGear } from "react-icons/bs";
+import { prestations } from "../datas/dataList";
+import { FaWordpressSimple } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function CardTech() {
-  const [isOpen, setIsOpen] = useState([]);
+  const [isOpen, setIsOpen] = useState([0, 1, 2]);
+  //const [isInView, setIsInView] = useState(false);
+  //const elementRef = useRef(null);
+  //const isInView = useInView(elementRef);
 
-  const contentFront = [
-    "HTML/CSS",
-    "JAVASCRIPT",
-    "REACT/NEXT",
-    "BOOTSTRAP/TAILWIND",
+  //const prestations = ["website", "webmastering", "formation"];
+
+  const contentWeb = [
+    "Site vitrine",
+    "Site e-commerce",
+    "Design sur-mesure",
+    "Conseils création de contenu",
   ];
-  const contentBack = ["NEST/NODE", "EXPRESS", "API REST", "MYSQL/MONGOBD"];
-  const contentDesign = [
-    "RÉDACTION SEO",
-    "INDESIGN",
-    "ILLUSTRATOR",
-    "PHOTOSHOP",
+  const contentFix = [
+    "Mise à jour Wordpress",
+    "Mise à jour plugins",
+    "Mise à jour de contenu",
+    "Optimisation SEO",
   ];
 
-  const handletoggle = (type) => {
-    if (isOpen.includes(type)) {
-      const arrayFiltered = isOpen.filter((item) => item !== type);
+  const handletoggle = (index) => {
+    if (isOpen.includes(index)) {
+      const arrayFiltered = isOpen.filter((item) => item !== index);
       setIsOpen(arrayFiltered);
     } else {
-      setIsOpen([...isOpen, type]);
+      setIsOpen([...isOpen, index]);
     }
   };
 
   return (
     <>
-      <div className="row m-0 text-center d-flex flex-column flex-md-row justify-content-center">
-        <div className="col-10 col-md-6 col-lg-4 mx-auto mb-5">
-          <div className={`${styles.bg_card} rounded fs-5 p-4 shadow`}>
-            <AnimateSharedLayout>
-              <i className="bi bi-code-slash fs-1"></i>
-              <h4 className="text-white mt-3 mb-3">Du FRONT...</h4>
-              <motion.div layout initial={{ borderRadius: 25 }}>
-                <motion.div
-                  layout
-                  onClick={() => handletoggle("front")}
-                  initial={{ borderRadius: 10 }}
-                >
-                  <motion.div className={`${styles.button_card} mb-3`} layout>
-                    {isOpen.includes("front") ? (
-                      <i className="infos bi bi-x-circle "></i>
+      <div className="m-0 flex flex-col lg:flex-row justify-center text-center ">
+        {prestations.map((prestation, index) => {
+          return (
+            <div
+              key={`prestation-${index}`}
+              className="w-11/12 md:w-1/2 lg:w-1/3 mx-auto mb-5 lg:px-5 font_bis"
+            >
+              <div
+                id="box"
+                className={`${styles.bg_card} rounded py-8 shadow-lg`}
+              >
+                <div>
+                  <div className="flex justify-center">
+                    {index === 0 ? (
+                      <IoCodeSlashOutline size={40} />
+                    ) : index === 1 ? (
+                      <BsGear size={40} />
                     ) : (
-                      <i className="infos bi bi-chevron-double-down fs-2"></i>
+                      <FaWordpressSimple size={40} />
                     )}
-                  </motion.div>
-                  <AnimatePresence>
-                    {isOpen.includes("front") && (
-                      <motion.div
-                        className=""
-                        layout
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
+                  </div>
+                  <div className="mx-2 md:mx-10 mt-3 mb-3 text-white uppercase text-base md:text-xl">
+                    <div className="my-5">
+                      <div>{prestation?.title}</div>
+                      <div>{prestation?.titleBis}</div>
+                    </div>
+                  </div>
+                  <div>
+                    <motion.div
+                      layout
+                      onClick={() => handletoggle(index)}
+                      initial={{ borderRadius: 10 }}
+                    >
+                      <div
+                        className={`${styles.button_card} mb-3 flex justify-center`}
                       >
-                        {contentFront.map((content) => {
-                          return (
-                            <p className="">
-                              <i className="bi bi-plus-circle-dotted me-3"></i>
-                              {content}
-                            </p>
-                          );
-                        })}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              </motion.div>
-            </AnimateSharedLayout>
-          </div>
-        </div>
-        <div className="col-10 col-md-6 col-lg-4 mx-auto mb-5">
-          <div className={`${styles.bg_card} rounded fs-5 p-4 shadow`}>
-            <AnimateSharedLayout>
-              <i className="bi bi-server fs-1"></i>
-              <h4 className="text-white mt-3 mb-3">...et aussi du BACK</h4>
-              <motion.div layout initial={{ borderRadius: 25 }}>
-                <motion.div
-                  layout
-                  onClick={() => handletoggle("back")}
-                  initial={{ borderRadius: 10 }}
-                >
-                  <motion.div className={`${styles.button_card} mb-3`} layout>
-                    {isOpen.includes("back") ? (
-                      <i className="infos bi bi-x-circle "></i>
-                    ) : (
-                      <i className=" infos bi bi-chevron-double-down fs-2"></i>
-                    )}
-                  </motion.div>
-                  <AnimatePresence>
-                    {isOpen.includes("back") && (
-                      <motion.div
-                        className=""
-                        layout
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                      >
-                        {contentBack.map((content) => {
-                          return (
-                            <p className="">
-                              <i className="bi bi-plus-circle-dotted me-3"></i>
-                              {content}
-                            </p>
-                          );
-                        })}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              </motion.div>
-            </AnimateSharedLayout>
-          </div>
-        </div>
-        <div className="col-10 col-md-6 col-lg-4 mx-auto mb-5">
-          <div className={`${styles.bg_card} rounded fs-5 p-4 shadow`}>
-            <AnimateSharedLayout>
-              <i className="bi bi-laptop fs-1"></i>
-              <h4 className="text-white mt-3 mb-3">SEO/DESIGN</h4>
-              <motion.div layout initial={{ borderRadius: 25 }}>
-                <motion.div
-                  layout
-                  onClick={() => handletoggle("design")}
-                  initial={{ borderRadius: 10 }}
-                >
-                  <motion.div className={`${styles.button_card} mb-3`} layout>
-                    {isOpen.includes("design") ? (
-                      <i className="infos bi bi-x-circle "></i>
-                    ) : (
-                      <i className="infos bi bi-chevron-double-down fs-2"></i>
-                    )}
-                  </motion.div>
-                  <AnimatePresence>
-                    {isOpen.includes("design") && (
-                      <motion.div
-                        className=""
-                        layout
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                      >
-                        {contentDesign.map((content) => {
-                          return (
-                            <p className="">
-                              <i className="bi bi-plus-circle-dotted me-3"></i>
-                              {content}
-                            </p>
-                          );
-                        })}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              </motion.div>
-            </AnimateSharedLayout>
-          </div>
+                        {isOpen.includes(index) ? (
+                          <FiChevronsUp size={40} />
+                        ) : (
+                          <FiChevronsDown size={40} />
+                        )}
+                      </div>
+                      <div>
+                        {isOpen.includes(index) && (
+                          <div className="text-base md:text-lg leading-10">
+                            {prestation?.content.map((content, indexWeb) => {
+                              return (
+                                <p
+                                  key={`contentFront-${indexWeb}`}
+                                  className=""
+                                >
+                                  {content}
+                                </p>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    </motion.div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div>
+        <div className="text-center">
+          <Link href="/">
+            <button className={`${styles.bouton} mt-5 p-2 text-xl rounded-md `}>
+              Tarifs sur devis
+            </button>
+          </Link>
         </div>
       </div>
     </>

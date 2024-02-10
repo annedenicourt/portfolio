@@ -59,19 +59,19 @@ export const projects = [
   },
   {
     id: 6,
-    name: "Site vitrine (from scratch)",
+    name: "Site vitrine céramiste professionnelle",
     category: "pro",
     title: "Créer un site vitrine pour une céramiste professionnelle",
     description:
       "Création d'un site vitrine from scratch avec REACT et NEXT.JS",
-    techno: "REACT/NEX.JS/VERCEL",
+    techno: "REACT/NEX.JS/VERCEL (from scratch)",
     image: "/images/fred_dupleich.png",
     link: "https://www.frederiquedupleich.com/",
     github: "https://github.com/annedenicourt/fred_dupleich",
   },
   {
     id: 7,
-    name: "Site vitrine (WORDPRESS)",
+    name: "Site vitrine hypnothérapeute",
     category: "pro",
     title: "Créer un site vitrine pour une hypnothérapeute",
     description: "Création d'un site vitrine wordpress avec Elementor",
@@ -91,6 +91,18 @@ export const projects = [
     techno: "REACT/NEST.JS/GRAPHQL/TAILWIND",
     image: "/images/miloe.png",
     link: "https://www.miloe-sante.com/",
+    github: "",
+  },
+  {
+    id: 9,
+    name: "Site vitrine coaching professionnel",
+    category: "pro",
+    title: "Site vitrine pour un coach professionnel",
+    description: "Création d'un site vitrine wordpress avec Elementor",
+    techno: "WORDPRESS/ELEMENTOR/OVH",
+    image: "/images/Mockup-coopyl-desktop_bis.png",
+    imageMobile: "/images/Mockup-coopyl-mobile.png",
+    link: "https://coopyl.fr/",
     github: "",
   },
 ];
@@ -289,7 +301,7 @@ export const jobs = [
   {
     id: 7,
     job: "Rédactrice web freelance",
-    society: "",
+    society: "Indépendante",
     period: "novembre 2011 à avril 2021",
   },
   {
@@ -332,5 +344,71 @@ export const diplomes = [
     id: 5,
     name: "Bac L (Noyon, 60)",
     period: "juin 1996",
+  },
+];
+
+export const allSteps = [
+  {
+    name: "Prise de contact",
+    image: "/images/phone.png",
+    content:
+      "Lors d'un premier entretien par téléphone, visio ou en présentiel, nous échangeons afin de cerner quels sont vos besoins exacts : contenus, fonctionnalités, architecture etc.",
+  },
+  {
+    name: "Élaboration du contenu",
+    image: "/images/idea.png",
+    content:
+      "Après avoir validé le devis, je récolte les données dont j'ai besoin pour commencer à travailler. A cette étape, vous me confiez les premiers textes et les photos que vous souhaitez intégrer dans votre site",
+  },
+  {
+    name: "Validation du design",
+    image: "/images/heart.png",
+    content:
+      "Je passe alors à la création du design sur Figma@ ou au choix du template afin de créer un site internet unique et adapté à votre marque. Nous le validons ensemble et apportons les modifications nécessaires.",
+  },
+  {
+    name: "Conception du site",
+    image: "/images/brain.png",
+    content:
+      "Après avoir réservé le nom de domaine et choisi un hébergeur ensemble, la conception de votre site web commence. Vous avez accès en permanence au travail en cours jusqu'à la finalisation du site.",
+  },
+  {
+    name: "Mise en ligne",
+    image: "/images/laptop.png",
+    content:
+      "Une fois satisfait, je lance votre site sur le web pour que vous puissiez commencer à attirer des visiteurs.",
+  },
+];
+
+export const prestations = [
+  {
+    title: "Création & refonte",
+    titleBis: "de sites internet",
+    content: [
+      "Site vitrine",
+      "Site e-commerce",
+      "Design sur-mesure",
+      "Conseils création de contenu",
+    ],
+  },
+  {
+    title: "Webmastering",
+    titleBis: "& maintenance",
+    content: [
+      "Mise à jour Wordpress",
+      "Mise à jour plugins",
+      "Mise à jour de contenu",
+      "Optimisation SEO",
+    ],
+  },
+  {
+    title: "Formations",
+    titleBis: "Wordpress",
+    content: [
+      "Configuration CMS",
+      "Intégration contenus",
+      "Installation plugins",
+      "Ajout formulaire de contact",
+    ],
   },
 ];

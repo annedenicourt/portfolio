@@ -1,20 +1,24 @@
-.active {
-  color: black !important;
+.separator {
+  background-color: #f3bf3a;
 }
-.active::after {
+.subtitle::after {
   content: "";
   display: block;
-  background-color: black;
-  height: 1px;
-  width: 60%;
+  background-color: #f3bf3a;
+  height: 10px;
+  width: 170px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: -10px;
   margin-bottom: 0px;
+  border-radius: 5px;
 }
 .bg_card {
   background-color: #1a2238 !important;
   color: white;
+}
+.card_container {
+  height: 440px;
 }
 .button_card {
   transition: transform 0.2s;
@@ -30,24 +34,85 @@
 }
 .bouton:hover {
   filter: brightness(1.4);
-  transform: scale(1.1);
+  transform: scale(0.95);
 }
 .image {
   opacity: 0.6;
 }
-.job::before {
+/* .job::before {
   content: "";
   display: block;
   background-color: black;
   height: 5px;
   width: 5px;
-}
+} */
 .menu {
-  z-index: 2;
-  position: fixed !important;
+  position: static !important;
 }
-@media screen and (min-width: 360px) and (max-width: 991px) {
+
+.modal_project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  width: 80%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .subtitle::after {
+    content: "";
+    display: block;
+    background-color: #f3bf3a;
+    height: 10px;
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 992px) {
   .menu {
-    position: static !important;
+    z-index: 2;
+    position: fixed !important;
+    max-width: 80rem;
+    width: 91.666667%;
+    margin: auto;
+  }
+
+  .subtitle::after {
+    content: "";
+    display: block;
+    background-color: #f3bf3a;
+    height: 10px;
+    width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+  }
+
+  .modal_project {
+    inset: 50% auto auto 50%;
+    position: absolute;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    width: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
   }
 }
