@@ -1,16 +1,3 @@
-/* module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {
-      animation: ['hover'],
-    }
-  },
-  plugins: [],
-} */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   important: true,
@@ -25,6 +12,10 @@ module.exports = {
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {
+      animation: ["hover"],
+    },
+  },
   plugins: [],
-  safelist: ["lg:w-1/3", "lg:px-5"],
 };

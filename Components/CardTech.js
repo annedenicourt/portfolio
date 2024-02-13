@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 import { useState, useRef, useEffect } from "react";
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { FiChevronsDown, FiChevronsUp } from "react-icons/fi";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { BsGear } from "react-icons/bs";
@@ -10,24 +10,6 @@ import Link from "next/link";
 
 export default function CardTech() {
   const [isOpen, setIsOpen] = useState([0, 1, 2]);
-  //const [isInView, setIsInView] = useState(false);
-  //const elementRef = useRef(null);
-  //const isInView = useInView(elementRef);
-
-  //const prestations = ["website", "webmastering", "formation"];
-
-  const contentWeb = [
-    "Site vitrine",
-    "Site e-commerce",
-    "Design sur-mesure",
-    "Conseils création de contenu",
-  ];
-  const contentFix = [
-    "Mise à jour Wordpress",
-    "Mise à jour plugins",
-    "Mise à jour de contenu",
-    "Optimisation SEO",
-  ];
 
   const handletoggle = (index) => {
     if (isOpen.includes(index)) {
@@ -108,9 +90,9 @@ export default function CardTech() {
       </div>
       <div>
         <div className="text-center">
-          <Link href="/">
+          <Link href="/prestations">
             <button className={`${styles.bouton} mt-5 p-2 text-xl rounded-md `}>
-              Tarifs sur devis
+              Voir les tarifs
             </button>
           </Link>
         </div>

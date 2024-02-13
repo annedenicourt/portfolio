@@ -15,18 +15,10 @@ import { FaArrowCircleDown } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
 export default function Home() {
-  const bounceTransition = {
-    y: {
-      duration: 0.7,
-      yoyo: Infinity,
-      ease: "easeOut",
-    },
-  };
-
   return (
     <div>
       <Head>
-        <title>Anne D. Développeur Web</title>
+        <title>Anne D. Création sites internet & développeur Web</title>
         <meta
           name="description"
           content="Portfolio Anne Denicourt développeur web"
@@ -247,7 +239,7 @@ export default function Home() {
           </section>
 
           {/* Section CONTACT */}
-          <div className="m-0 flex flex-col" id="contact">
+          <section className="m-0 flex flex-col" id="contact">
             <div className="mt-5 font-bold text-4xl text-center">
               <div className="mx-auto mb-5 flex items-center justify-center text-center">
                 <div
@@ -292,8 +284,8 @@ export default function Home() {
               </div>
               <Form />
             </div>
-            <Footer />
-          </div>
+          </section>
+          <Footer />
         </div>
       </main>
     </div>

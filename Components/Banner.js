@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
+import { PiHouseSimpleLight } from "react-icons/pi";
 
 export default function Banner() {
   const router = useRouter();
@@ -9,24 +10,17 @@ export default function Banner() {
 
   const navBar = () => {
     return (
-      <ul className="p-4 md:p-0 mt-4 md:mt-0 flex flex-col md:flex-row md:bg-white text-base md:text-lg lg:text-xl font-medium border md:border-0 border-gray-100 bg-gray-50 rounded-lg md:space-x-8">
+      <ul className="p-4 md:p-0 mt-4 md:mt-0 flex flex-col md:flex-row items-center md:bg-white text-base md:text-lg lg:text-xl font-medium border md:border-0 border-gray-100 bg-gray-50 rounded-lg md:space-x-8">
         <li className="mb-1">
-          <Link href="/#accueil">
-            <a
-              className={`py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 ${
-                router.asPath == "/#accueil" &&
-                "underline underline-offset-4 md:underline-offset-8"
-              }`}
-            >
-              Accueil
-            </a>
+          <Link href="/">
+            <PiHouseSimpleLight size={25} className="cursor-pointer" />
           </Link>
         </li>
         <li className="mb-1">
-          <Link href="/#services">
+          <Link href="/prestations">
             <a
               className={`py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 ${
-                router.asPath == "/#services" &&
+                router.asPath == "/prestations" &&
                 "underline underline-offset-4 md:underline-offset-8"
               }`}
             >
@@ -60,10 +54,10 @@ export default function Banner() {
           </Link>
         </li>
         <li className="mb-1">
-          <Link href="/#presentation">
+          <Link href="/mon-cv">
             <a
               className={`py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 ${
-                router.asPath == "/#presentation" &&
+                router.asPath == "/mon-cv" &&
                 "underline underline-offset-4 md:underline-offset-8"
               }`}
             >
@@ -71,30 +65,6 @@ export default function Banner() {
             </a>
           </Link>
         </li>
-        {/* <li className="mb-1">
-          <Link href="/#projets">
-            <a
-              className={`py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 ${
-                router.asPath == "/#projets" &&
-                "underline underline-offset-4 md:underline-offset-8"
-              }`}
-            >
-              Mes projets
-            </a>
-          </Link>
-        </li> */}
-        {/* <li className="mb-1">
-          <Link href="/mon-cv">
-            <a
-              className={`py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 ${
-                router.asPath == "/#mon-cv" &&
-                "underline underline-offset-4 md:underline-offset-8"
-              }`}
-            >
-              Mon CV
-            </a>
-          </Link>
-        </li> */}
         <li className="mb-1">
           <Link href="/#contact">
             <a

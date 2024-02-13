@@ -412,3 +412,93 @@ export const prestations = [
     ],
   },
 ];
+
+export const prestationsDetails = [
+  {
+    type: "website",
+    title: "site vitrine",
+    titleBis: "“one-page”",
+    price: "450 €*",
+    content:
+      "Site vitrine avec une seule page d’accueil (+ formulaire de contact). Formule adaptée aux petits budgets qui souhaitent être visibles sur le net",
+  },
+  {
+    type: "website",
+    title: "site vitrine",
+    titleBis: "“standard”",
+    price: "700 €*",
+    content:
+      "Site vitrine avec plusieurs pages et les fonctionnalités 'standard' (accueil, services, à propos, contact) construit à partir d’un template personnalisable",
+  },
+  {
+    type: "website",
+    title: "site vitrine",
+    titleBis: "“sur-mesure”",
+    price: "950 €*",
+    content:
+      "Site vitrine avec plusieurs pages (accueil, services, à propos, contact) construit à partir d’un design sur-mesure parfaitement adapté à votre identité",
+  },
+  {
+    type: "commerce",
+    title: "site e-commerce",
+    titleBis: "",
+    price: "1300 €*",
+    content:
+      "Site avec plusieurs pages (accueil, boutique, à propos, contact) construit à partir d’un template woocommerce et système de paiement en ligne ",
+  },
+  {
+    type: "webmastering",
+    title: "Webmastering",
+    titleBis: "& maintenance",
+    price: "15 €/mois**",
+    content:
+      "Mise à jour de WORDPRESS, du thème builder Elementor, des plugins, du contenu. Résolution de problèmes. Sous format d'abonnement mensuel",
+  },
+  {
+    type: "formation",
+    title: "Formation",
+    titleBis: "Wordpress",
+    price: "SUR DEVIS",
+    content:
+      "Formation pour vous aider à prendre en main Wordpress, héberger votre site et gérer seul la création et/ou la mise à jour de contenus",
+  },
+];
+
+export const optionsList = [
+  {
+    type: "CMS",
+    one: "Wordpress",
+    standard: "Wordpress",
+    custom: "Wordpress",
+    shop: "WooCommerce",
+  },
+  {
+    type: "Pages",
+    one: "Une page d'accueil",
+    standard: "5 pages",
+    custom: "5 à 7 pages",
+    shop: "5 à 7 pages",
+  },
+  {
+    type: "Design",
+    one: "Template personnalisé",
+    standard: "Template personnalisé",
+    custom: "Design sur-mesure",
+    shop: "Template woocommerce personnalisé",
+  },
+  {
+    type: "SEO",
+    one: "Balisage optimisé",
+    standard:
+      "Balisage, fil d'ariane et aide à la création de contenu optimisé",
+    custom: "Balisage, fil d'ariane et aide à la création de contenu optimisé",
+    shop: "Balisage, fil d'ariane et aide à la création de contenu optimisé",
+  },
+  {
+    type: "Sécurité",
+    one: "Modules anti-spam et anti-intrusion",
+    standard: "Modules anti-spam et anti-intrusion",
+    custom: "Modules anti-spam et anti-intrusion",
+    shop: "Modules anti-spam et anti-intrusion",
+  },
+];
