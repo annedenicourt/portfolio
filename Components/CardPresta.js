@@ -9,10 +9,13 @@ import Link from "next/link";
 export default function CardPresta() {
   return (
     <>
-      <div className="w-10/12 mx-auto flex flex-col lg:flex-row flex-wrap justify-center text-center ">
+      <div className="w-full md:w-11/12 lg:w-10/12 mx-auto flex flex-col md:flex-row flex-wrap justify-center text-center ">
         {prestationsDetails.map((prestation, index) => {
           return (
-            <div key={`prestation-${index}`} className="w-1/3 mb-5 font_bis">
+            <div
+              key={`prestation-${index}`}
+              className="w-full md:w-1/2 lg:w-1/3 mb-5 font_bis"
+            >
               <div
                 className={`${styles.bg_card} ${styles.card_presta} mx-auto py-8 px-4 rounded-md shadow-lg`}
               >

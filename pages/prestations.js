@@ -72,8 +72,10 @@ export default function PRESTA() {
             <div
               className={`relative w-10/12 mx-auto font_bis overflow-x-auto shadow-md rounded-lg`}
             >
-              <table className="w-full  text-center text-gray-500">
-                <thead className={`text-base uppercase ${styles.bg_card}`}>
+              <table className="w-full text-center text-gray-500">
+                <thead
+                  className={`text-xs md:text-sm lg:text-base uppercase ${styles.bg_card}`}
+                >
                   <tr className="">
                     <th scope="col" className="w-1/5 px-6 py-3"></th>
                     <th scope="col" className="w-1/5 px-6 py-3">
@@ -90,7 +92,7 @@ export default function PRESTA() {
                     </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="text-xs md:text-sm lg:text-base">
                   {optionsList?.map((item, index) => {
                     return (
                       <tr
@@ -166,41 +168,41 @@ export default function PRESTA() {
                       </div>
                     </td>
                   </tr>
-                  <tr className={`text-base uppercase ${styles.bg_card}`}>
+                  <tr
+                    className={`text-xs md:text-sm lg:text-base uppercase ${styles.bg_card}`}
+                  >
                     <th
                       scope="row"
                       className="px-6 py-4 font-medium whitespace-nowrap"
                     >
                       Tarifs
                     </th>
-                    <td className="px-6 py-4 text-xl font-bold text-yellow-500">
+                    <td className="px-6 py-4 text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
                       450 €*
                     </td>
-                    <td className="px-6 py-4 text-xl font-bold text-yellow-500">
+                    <td className="px-6 py-4 text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
                       700 €*
                     </td>
-                    <td className="px-6 py-4 text-xl font-bold text-yellow-500">
+                    <td className="px-6 py-4 text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
                       950 €*
                     </td>
-                    <td className="px-6 py-4 text-xl font-bold text-yellow-500">
+                    <td className="px-6 py-4 text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
                       <span className="text-xs mr-1 lowercase">
                         à partir de
                       </span>
-                      <span className="text-xl font-bold text-yellow-500">
+                      <span className="text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
                         1500 €*
                       </span>
                     </td>
                   </tr>
-                  <tr className={`text-base border-b`}>
+                  <tr className={`text-xs md:text-sm lg:text-base border-b`}>
                     <th
                       scope="row"
                       className="px-6 py-4 font-medium whitespace-nowrap"
                     >
                       Maintenance
                     </th>
-                    <td className="px-6 py-4 text-base font-bold">
-                      15 €/mois**
-                    </td>
+                    <td className="px-6 py-4 font-bold">15 €/mois**</td>
                     <td className="px-6 py-4 font-bold">25 €/mois**</td>
                     <td className="px-6 py-4 font-bold">25 €/mois**</td>
                     <td className="px-6 py-4 font-bold">

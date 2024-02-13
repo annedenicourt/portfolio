@@ -117,7 +117,10 @@ export default function Banner() {
               </svg>
             </button>
             {showMobileMenu && (
-              <div className="absolute top-10 w-52" id="navbar-default-mobile">
+              <div
+                className="z-10 absolute top-10 w-52"
+                id="navbar-default-mobile"
+              >
                 {navBar()}
               </div>
             )}
