@@ -30,12 +30,10 @@
   transition: 0.5s ease;
   visibility: hidden;
 }
-.card_container:hover {
-  .reveal_hover {
-    right: 0;
-    opacity: 1;
-    visibility: visible;
-  }
+.card_container:hover .reveal_hover {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
 }
 .button_card {
   transition: transform 0.2s;
