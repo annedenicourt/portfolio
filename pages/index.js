@@ -148,7 +148,7 @@ export default function Home() {
                   priority="true"
                 />
               </div>
-              <div className="w-11/12 md:w-4/5 mx-auto flex flex-wrap">
+              <div className="w-11/12 lg:w-4/5 mx-auto flex flex-wrap">
                 {projects
                   .filter((project) => project.category === "pro")
                   .map((project) => (
@@ -170,7 +170,7 @@ export default function Home() {
                             description={project.description}
                             techno={project.techno}
                             image={project.image}
-                            imageMobile={project.imageMobile}
+                            imageHover={project.imageHover}
                             link={project.link}
                             github={project.github}
                           />
