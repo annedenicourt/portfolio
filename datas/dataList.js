@@ -121,7 +121,7 @@ export const projects = [
     github: "",
   },
   {
-    id: 10,
+    id: 11,
     name: "Site vitrine formation astrologie",
     category: "pro",
     title: "Site vitrine pour un centre de formation en astrologie",

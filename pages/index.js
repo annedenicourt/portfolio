@@ -26,8 +26,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <div className="mx-8 lg:w-11/12 lg:max-w-7xl lg:mx-auto text-gray-800 bg-white">
+      <main className="relative">
+        <div className=" mx-8 lg:w-11/12 lg:max-w-7xl lg:mx-auto text-gray-800 bg-white">
           <div className="mx-0 mb-5">
             <div className="flex justify-center">
               <div className={`${styles.menu}`}>
@@ -285,7 +285,31 @@ export default function Home() {
               <Form />
             </div>
           </section>
+
           <Footer />
+        </div>
+        <div className="fixed bottom-20 right-0 bg-white border cursor-pointer">
+          <a
+            href="https://www.prestanumerique.fr/detail/annedenicourtgmail-com/"
+            target="_blank"
+          >
+            <div className="w-40 py-2">
+              <div className="font_bis font-bold text-center text-xs">
+                Partenaire
+              </div>
+              <div className="mx-2">
+                <Image
+                  //className={`${styles.image}`}
+                  src="/images/logo-prestanumerique.svg"
+                  alt="logo prestanumerique"
+                  width={500}
+                  height={230}
+                  layout="responsive"
+                  priority="true"
+                />
+              </div>
+            </div>
+          </a>
         </div>
       </main>
     </div>
