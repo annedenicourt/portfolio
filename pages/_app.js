@@ -18,7 +18,12 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:description"
-          content="Portfolio Anne Denicourt développeur web"
+          content="Vous recherchez un professionnel pour la création de votre site
+                internet dans le Tarn-et-Garonne, à Montauban ou en Occitanie ?
+                 En tant que webmaster et développeur
+                web expérimenté, je propose des services de création de sites
+                internet sur mesure, adaptés à votre image et à vos besoins
+                spécifiques."
         />
         <meta
           property="og:site_name"
