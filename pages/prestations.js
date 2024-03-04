@@ -11,6 +11,7 @@ import Footer from "../Components/Footer";
 import { FaCheck } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 import ARTCILECONTENT from "../Components/Article";
+import Partner from "../Components/partner";
 
 export default function PRESTA() {
   return (
@@ -29,7 +30,7 @@ export default function PRESTA() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="relative">
         <div className="mx-8 lg:w-11/12 lg:max-w-7xl lg:mx-auto text-gray-800 bg-white">
           <div className="mx-0 mb-5">
             <div className="flex justify-center">
@@ -38,7 +39,6 @@ export default function PRESTA() {
               </div>
             </div>
           </div>
-
           <section className="" id="services">
             <div className="mx-auto mt-24 flex items-center justify-center text-center">
               <div className={`${styles.separator} w-44 h-0.5 ml-6`}></div>
@@ -61,13 +61,11 @@ export default function PRESTA() {
               <CardPresta />
             </Fade>
           </section>
-
           <section>
             <div className="w-10/12 mx-auto mt-24 flex items-center justify-center text-center">
               <ARTCILECONTENT />
             </div>
           </section>
-
           <section className="mb-24" id="tarifs">
             <div className="mx-auto my-24 flex items-center justify-center text-center">
               <div className={`${styles.separator} w-44 h-0.5 ml-6`}></div>
@@ -241,7 +239,13 @@ export default function PRESTA() {
               </button>
             </Link>
           </div>
+          <div className="flex md:hidden justify-center bg-white cursor-pointer">
+            <Partner />
+          </div>
           <Footer />
+        </div>
+        <div className="hidden md:flex fixed bottom-20 right-0 bg-white border cursor-pointer">
+          <Partner />
         </div>
       </main>
     </div>

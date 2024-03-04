@@ -13,6 +13,7 @@ import Steps from "../Components/Steps";
 import Footer from "../Components/Footer";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
+import Partner from "../Components/partner";
 
 export default function Home() {
   return (
@@ -290,31 +291,13 @@ export default function Home() {
               <Form />
             </div>
           </section>
-
+          <div className="flex md:hidden justify-center bg-white cursor-pointer">
+            <Partner />
+          </div>
           <Footer />
         </div>
-        <div className="fixed bottom-20 right-0 bg-white border cursor-pointer">
-          <a
-            href="https://www.prestanumerique.fr/detail/annedenicourtgmail-com/"
-            target="_blank"
-          >
-            <div className="w-40 py-2">
-              <div className="font_bis font-bold text-center text-xs">
-                Partenaire
-              </div>
-              <div className="mx-2">
-                <Image
-                  //className={`${styles.image}`}
-                  src="/images/logo-prestanumerique.svg"
-                  alt="logo prestanumerique"
-                  width={500}
-                  height={230}
-                  layout="responsive"
-                  priority="true"
-                />
-              </div>
-            </div>
-          </a>
+        <div className="hidden md:flex fixed bottom-20 right-0 bg-white border cursor-pointer">
+          <Partner />
         </div>
       </main>
     </div>

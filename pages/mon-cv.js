@@ -10,6 +10,7 @@ import { diplomes, jobs, pro } from "../datas/dataList";
 import { FaSquare } from "react-icons/fa";
 import { BsSearch, BsDownload } from "react-icons/bs";
 import { Fade } from "react-awesome-reveal";
+import Partner from "../Components/partner";
 
 export default function CV() {
   const [showInfo, setShowInfo] = useState(false);
@@ -51,7 +52,7 @@ export default function CV() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="relative">
         <div className="mx-8 lg:w-11/12 lg:max-w-7xl lg:mx-auto text-gray-800 bg-white">
           <div className="">
             <div className="flex justify-center">
@@ -246,7 +247,13 @@ export default function CV() {
               </Link>
             </div>
           </section>
+          <div className="flex md:hidden justify-center bg-white cursor-pointer">
+            <Partner />
+          </div>
           <Footer />
+        </div>
+        <div className="hidden md:flex fixed bottom-20 right-0 bg-white border cursor-pointer">
+          <Partner />
         </div>
       </main>
     </div>
