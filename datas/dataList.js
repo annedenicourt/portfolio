@@ -470,7 +470,7 @@ export const prestationsDetails = [
     type: "commerce",
     title: "site e-commerce",
     titleBis: "",
-    price: "1300 €*",
+    price: "1250 €*",
     content:
       "Site avec plusieurs pages (accueil, boutique, à propos, contact) construit à partir d’un template woocommerce et système de paiement en ligne ",
   },

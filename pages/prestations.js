@@ -197,7 +197,7 @@ export default function PRESTA() {
                         à partir de
                       </span>
                       <span className="text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
-                        1500 €*
+                        1300 €*
                       </span>
                     </td>
                   </tr>
