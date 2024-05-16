@@ -454,7 +454,7 @@ export const prestationsDetails = [
     type: "website",
     title: "site vitrine",
     titleBis: "“standard”",
-    price: "700 €*",
+    price: "650 €*",
     content:
       "Site vitrine avec plusieurs pages et les fonctionnalités 'standard' (accueil, services, à propos, contact) construit à partir d’un template personnalisable",
   },
@@ -462,7 +462,7 @@ export const prestationsDetails = [
     type: "website",
     title: "site vitrine",
     titleBis: "“sur-mesure”",
-    price: "950 €*",
+    price: "850 €*",
     content:
       "Site vitrine avec plusieurs pages (accueil, services, à propos, contact) construit à partir d’un design sur-mesure parfaitement adapté à votre identité",
   },
@@ -470,7 +470,7 @@ export const prestationsDetails = [
     type: "commerce",
     title: "site e-commerce",
     titleBis: "",
-    price: "1250 €*",
+    price: "1100 €*",
     content:
       "Site avec plusieurs pages (accueil, boutique, à propos, contact) construit à partir d’un template woocommerce et système de paiement en ligne ",
   },

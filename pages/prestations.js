@@ -187,17 +187,17 @@ export default function PRESTA() {
                       450 €*
                     </td>
                     <td className="px-6 py-4 text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
-                      700 €*
+                      650 €*
                     </td>
                     <td className="px-6 py-4 text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
-                      950 €*
+                      850 €*
                     </td>
                     <td className="px-6 py-4 text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
                       <span className="text-xs mr-1 lowercase">
                         à partir de
                       </span>
                       <span className="text-xs md:text-sm lg:text-xl font-bold text-yellow-500">
-                        1250 €*
+                        1100 €*
                       </span>
                     </td>
                   </tr>
