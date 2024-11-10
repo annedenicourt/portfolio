@@ -44,14 +44,14 @@ export default function Home() {
           {/* Section ACCUEIL */}
           <section className="m-0 md:mt-24" id="accueil">
             <div className="mx-auto pt-5 text-center">
-              <div className="w-full md:w-3/4 py-8 my-8 mx-auto">
+              <div className="w-full md:w-3/4 pb-8 mb-8 mx-auto">
                 <Fade triggerOnce={true} delay={800} down>
                   <Image
                     className={`${styles.image}`}
                     src="/images/laptop.png"
                     alt="illustration ordinateur"
-                    width={500}
-                    height={230}
+                    width={174}
+                    height={80}
                     layout="responsive"
                     priority="true"
                   />
