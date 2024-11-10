@@ -78,7 +78,11 @@ export default function CardProject(props) {
         </div>
         <div>
           <div className="w-full flex justify-center">
-            <img src={props.image} alt={props.name} className="" />
+            <img
+              src={props.image}
+              alt={props.name}
+              className="w-full h-96 object-cover"
+            />
           </div>
           <div className="mt-3 text-xl md:text-2xl font-bold">Objectif :</div>
           <div className="my-3 text-base md:text-lg">{props.description}</div>

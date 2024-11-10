@@ -68,6 +68,7 @@
   outline: none;
   padding: 20px;
   width: 80%;
+  height: 80%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
