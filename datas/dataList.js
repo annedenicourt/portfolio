@@ -159,7 +159,7 @@ export const projects = [
     link: "https://www.berrymoodphoto.com/",
     github: "",
   },
-  {
+  /* {
     id: 14,
     name: "Site e-commerce bougies artisanales",
     category: "pro",
@@ -171,6 +171,31 @@ export const projects = [
     image: "/images/screenshot-shadowmoon.png",
     imageHover: "/images/pack_mockup_shadowmoon.png",
     link: "https://www.shadow-moon.com/",
+    github: "",
+  }, */
+  {
+    id: 15,
+    name: "Site vitrine hébergement touristique",
+    category: "pro",
+    title:
+      "Site vitrine multilingue pour un hébergement touristique en Normandie",
+    description: "Création d'un site vitrine wordpress avec Elementor",
+    techno: "WORDPRESS/ELEMENTOR/OVH",
+    image: "/images/screenshot-manoir.png",
+    imageHover: "/images/pack_mockup_manoir_chapelle.png",
+    link: "https://www.lemanoirdelachapelle.com/",
+    github: "",
+  },
+  {
+    id: 16,
+    name: "Site vitrine kinésiologue",
+    category: "pro",
+    title: "Site vitrine pour un cabinet de kinésiologie",
+    description: "Création d'un site vitrine wordpress avec Elementor",
+    techno: "WORDPRESS/ELEMENTOR/OVH",
+    image: "/images/screenshot-delphine-jacob.png",
+    imageHover: "/images/pack_mockup_delphine_jacob.png",
+    link: "https://www.delphinejacobkinesiologue.fr/",
     github: "",
   },
 ];
