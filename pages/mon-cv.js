@@ -32,7 +32,7 @@ export default function CV() {
     if (type === "infography") {
       window.open("/images/Recruter Anne Denicourt.jpg", "_blank");
     } else {
-      window.open("/images/CV.jpg", "_blank");
+      window.open("/images/cv_devweb.jpg", "_blank");
     }
   };
 
@@ -196,7 +196,7 @@ export default function CV() {
                     <Image
                       className="rounded"
                       onClick={() => zoom("cv")}
-                      src="/images/CV.jpg"
+                      src="/images/cv_devweb.jpg"
                       alt="CV Anne Denicourt développeur web"
                       width={1240}
                       height={1754}
@@ -214,7 +214,7 @@ export default function CV() {
                     Zoom
                   </div>
                   <a
-                    href="/images/CV.jpg"
+                    href="/images/cv_devweb.jpg"
                     download
                     className="mt-3 mx-4 flex items-center justify-center cursor-pointer"
                     onClick={() => setShowInfo(true)}
@@ -230,7 +230,7 @@ export default function CV() {
                 >
                   <div className="flex justify-end">
                     <img
-                      src="/images/CV.jpg"
+                      src="/images/cv_devweb.jpg"
                       alt="CV Anne Denicourt développeur web"
                     />
                   </div>
