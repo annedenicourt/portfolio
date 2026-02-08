@@ -58,6 +58,11 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
           crossorigin="anonymous"
         ></script> */}
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       </Head>
 
