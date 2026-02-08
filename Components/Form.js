@@ -1,13 +1,13 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { BsEnvelope } from "react-icons/bs";
 
-export default function Form() {
+export default function ContactForm() {
   const captchaRef = useRef(null);
   const [captchaValid, setCaptchaValid] = useState(false);
 
-  // Rendu dynamique du captcha
+  // Rendu dynamique du captcha pour prod
   useEffect(() => {
     const interval = setInterval(() => {
       if (
@@ -16,10 +16,10 @@ export default function Form() {
         !captchaRef.current.dataset.rendered
       ) {
         window.grecaptcha.render(captchaRef.current, {
-          sitekey: "6LcRje8rAAAAABkuXhFzVW8qu228sMScYdEXqWyq",
-          callback: () => setCaptchaValid(true), // appelé quand captcha coché
+          sitekey: "6Lfm8LUZAAAAABwiGmd3tMqgUPH0cEbfFBn8a1FD", // <-- GOOGLE SITE KEY
+          callback: () => setCaptchaValid(true),
         });
-        captchaRef.current.dataset.rendered = "true"; // pour ne pas renderer deux fois
+        captchaRef.current.dataset.rendered = "true";
         clearInterval(interval);
       }
     }, 100);
@@ -43,10 +43,10 @@ export default function Form() {
 
     emailjs
       .sendForm(
-        "service_if9q8wq",
-        "contact_form",
+        "service_if9q8wq", // ton service EmailJS
+        "contact_form", // ton template EmailJS
         e.target,
-        "user_BwL24v0D7KuEvBfg9MBkR",
+        "user_BwL24v0D7KuEvBfg9MBkR", // clé publique EmailJS
       )
       .then(
         () => {
@@ -57,7 +57,7 @@ export default function Form() {
           });
           document.getElementById("contact_form").reset();
           window.grecaptcha.reset();
-          setCaptchaValid(false); // reset état du bouton
+          setCaptchaValid(false);
         },
         (error) => {
           console.error(error.text);
@@ -77,6 +77,7 @@ export default function Form() {
       onSubmit={sendEmail}
     >
       <input type="hidden" name="contact_number" />
+
       <div className="flex flex-col items-center text-xl">
         <input
           className="w-full mt-6 p-1 border rounded-md"
